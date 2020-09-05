@@ -1,0 +1,6 @@
+1 - porque estou aplicando para o programa
+2 - tem que ser hospedado no git
+3 - ter um link para o freeCodeCamp profile
+4 - ter um link para o CodeWars profile
+5 - Ter um image carousel
+6 - ser responsivo
