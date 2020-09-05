@@ -1,11 +1,18 @@
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
+  --headerHeight: 100px;
+  --footerHeight: 150px;
+
   --headerColor: rgb(28, 25, 53);
   --buttonHoverColor: rgb(54, 44, 143);
   --buttonActiveColor: rgb(30, 21, 107);
+
+  --footerColor: rgb(25, 21, 56);
+  --mainColor: whitesmoke
 }
 
 .lagosta {
@@ -19,12 +26,14 @@ body {
 
 
 /*  Header CSS  */
-.header {
+header {
+  margin: 0;
+  padding: 0;
   background: var(--headerColor);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: var(--headerHeight);
   border-bottom: solid 3px cyan;
 }
 
@@ -69,3 +78,98 @@ body {
 }
 
 /*  Footer CSS  */
+
+h3 {
+  font-size: 1.3em;
+  color: lightgray
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  height: var(--footerHeight);
+  background: var(--footerColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.forDate {
+  color: lightgray;
+  padding: 0;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.linksContainer {
+  margin: 0;
+  padding: 0;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.createdSay p {
+  color: lightgray;
+}
+
+.linksSocial {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.linksSocial i {
+  color: lightgray;
+  margin: 0;
+  padding: 0;
+  transform: scale(3);
+}
+
+.linksSocial i:hover {
+  color: white;
+}
+
+.linksSocial i:active {
+  color: lightgray;
+}
+
+/* Main CSS  */
+
+main {
+  height: calc(100vh - var(--footerHeight) - var(--headerHeight));
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  background-color: var(--mainColor)
+}
+
+.introduction p {
+  padding: 0;
+  margin: 0;
+}
+
+.about {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  background-color: var(--mainColor);
+}
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  background-color: var(--mainColor);
+
+}
