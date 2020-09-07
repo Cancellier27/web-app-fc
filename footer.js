@@ -9,10 +9,10 @@ function todayDate() {
   const dayDate = new Date()
   const forDate = document.querySelector('.forDate')
 
-  const dataField = newElement('h3', 'todayDate')
+  const dataTagElement = newElement('h3', 'todayDate')
   dataField.innerHTML = dayDate.toDateString()
 
-  forDate.appendChild(dataField)
+  forDate.appendChild(dataTagElement)
 }
 
 todayDate()

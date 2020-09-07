@@ -3,6 +3,6 @@
 3 - ter um link para o freeCodeCamp profile
 4 - ter um link para o CodeWars profile
 5 - Ter um image carousel
-  5.1 - adicionaros links no carousel
+  5.1 - adicionar os links no carousel
 6 - ser responsivo
 
