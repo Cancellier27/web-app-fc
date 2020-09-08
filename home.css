@@ -92,6 +92,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top:  solid 3px cyan;
 }
 
 
@@ -144,7 +145,10 @@ main {
   padding: 0px;
   background-color: whitesmoke;
   display: flex;
-  flex-direction: column;
+}
+
+.carouselContainer {
+  width: 50%;
 }
 
 .introduction {

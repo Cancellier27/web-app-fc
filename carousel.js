@@ -1,1 +1,1 @@
-// File for creation of carousel animaion
+// File for creation of carousel animation
