@@ -20,6 +20,7 @@
 }
 
 body {
+  background-image: url("./assets/backgroundAll.png");
   margin: 0;
   padding: 0;
 }
@@ -29,12 +30,12 @@ body {
 header {
   margin: 0;
   padding: 0;
-  background: var(--headerColor);
+  /* background: var(--headerColor); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--headerHeight);
-  border-bottom: solid 3px cyan;
+  border-bottom: solid 1px white;
 }
 
 .myName {
@@ -88,11 +89,11 @@ footer {
   margin: 0;
   padding: 0;
   height: var(--footerHeight);
-  background: var(--footerColor);
+  /* background: var(--footerColor); */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top:  solid 3px cyan;
+  border-top:  solid 1px white;
 }
 
 
@@ -143,7 +144,7 @@ main {
   height: calc(100vh - var(--footerHeight) - var(--headerHeight));
   margin: 0px;
   padding: 0px;
-  background-color: whitesmoke;
+  background: none;
   display: flex;
 }
 
@@ -179,7 +180,9 @@ main {
 }
 
 .introduction{
-  margin: 100px;
+  background: none;
+  margin-left: 100px;
+  margin-top: 100px;
   width: 800px;
 }
 
@@ -188,3 +191,20 @@ main {
   padding: 10px;
   margin: 10px;
 }
+
+.hello {
+  background: none;
+  font-size: 10em;
+  padding: 10px;
+  margin: 10px;
+  color: whitesmoke;
+}
+
+.skills {
+  padding: 0px 10px 10px 10px;
+  margin: 0px 10px 10px 10px;
+  color: rgb(160, 160, 160);
+
+}
+
+
