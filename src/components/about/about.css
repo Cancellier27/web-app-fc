@@ -1,8 +1,22 @@
 .first-letter {
+  color: lightgrey;
   font-family: 'Lobster', cursive;
   font-size: 4em;
 }
 
 .text {
   color: lightgrey;
+}
+
+.aboutContainer {
+  margin: 0;
+  padding: 0;
+
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+}
+
+.siteLink {
+  color: tomato;
 }
