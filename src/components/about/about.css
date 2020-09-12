@@ -1,3 +1,11 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+
 .first-letter {
   color: lightgrey;
   font-family: 'Lobster', cursive;
@@ -8,7 +16,7 @@
   color: lightgrey;
 }
 
-.aboutContainer {
+.textContainer {
   margin: 0;
   padding: 0;
 
@@ -19,4 +27,24 @@
 
 .siteLink {
   color: tomato;
+}
+
+.carouselContainer {
+  height: 400px;
+  width: 700px;
+  position: relative;
+}
+
+.carouselContainer img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  
+  opacity: 0;
+}
+
+.imgSelected {
+  opacity: 1;
 }
