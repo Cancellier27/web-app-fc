@@ -1,28 +1,30 @@
 // File for creation of carousel animation
 const carouselSlider = document.querySelector(".carouselSlider")
-const carouselImages = document.querySelectorAll(".carouselSlider img")
 
-let counter = 0
+let carouselImages = document.querySelectorAll(".carouselSlider img")
+let counter = 1
 const imgSize = carouselImages[counter].clientWidth + 24;
+const interval = 1000;
+// carouselSlider.style.transform = `translateX(-${imgSize * counter}px)`
 
-function carouselLoop (slider) {
-  
 
+function carouselLoop() {
   setInterval(() => {
-    console.log(imgSize, counter)
-    slider.style.transition = `transform 1000ms ease-in-out`
-    slider.style.transform = `translateX(-${imgSize * counter + 1}px)`
-    counter += 1
-
-    if (carouselImages[counter].id === "lastImg") {
-      console.log("acabou")
-      counter = 1
-      slider.style.transition = "none" 
-      slider.style.transform = `translateX(0px)`
-    }
-  } ,3000)
+    carouselSlider.style.transition = `700ms ease-out`
+    carouselSlider.style.transform = `translateX(${-imgSize * counter}px)`
+    counter++
+  }, interval)
 }
 
+carouselSlider.addEventListener('transitionend', () => {
+  carouselImages = document.querySelectorAll(".carouselSlider img")
+  if (carouselImages[counter].id === "lastImg") {
+    console.log('oi')
+    carouselSlider.style.transition = "none"
+    counter = 1
+    carouselSlider.style.transform = `translateX(${0}px)`
+  }
+})
 
 
-carouselLoop(carouselSlider)
+carouselLoop()
