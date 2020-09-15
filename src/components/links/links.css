@@ -6,3 +6,33 @@
   color: whitesmoke;
 }
 
+.homeNavBarLinks {
+  margin-left: 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.homeNavBarLinks h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.linksContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.linksContainer a {
+  margin: 0;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
