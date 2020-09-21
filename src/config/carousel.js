@@ -2,6 +2,7 @@
 const carouselSlider = document.querySelector(".carouselSlider")
 
 let carouselImages = document.querySelectorAll(".carouselSlider img")
+
 let counter = 1
 const imgSize = carouselImages[counter].clientWidth + 24;
 const interval = 1000;
