@@ -37,7 +37,6 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-  /* height: 300px; */
   width: 1560px;
   border: solid 1px red;
 
@@ -53,18 +52,13 @@
 
   display: flex;
 
-  /* border: 5px purple solid; */
-
   transform: translateX(0px);
-  /* transition-duration: 1000ms; */
 }
 
 .carouselContainer img {
-  /* padding: 5px 10px 5px 10px; */
   margin: 5px 10px 5px 10px;
   object-fit: cover;
   width: 500px;
-  /* height: auto; */
 
   border: solid white 2px;
   border-radius: 10px;
