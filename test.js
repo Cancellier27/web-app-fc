@@ -17,7 +17,3 @@ function incrementString (strng) {
 
 console.log(incrementString("foobar000"));
 console.log(incrementString("foo"));
-console.log(incrementString("foobar001"));
-console.log(incrementString("foobar99"));
-console.log(incrementString("foobar099"));
-console.log(incrementString(""));
