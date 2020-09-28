@@ -39,11 +39,10 @@
   margin-bottom: 10px;
   width: 1540px;
   height: 300px;
-  border-left: solid 5px red;
-  border-right: solid 5px red;
-  /* border-right: solid 5px var(--buttonActiveColor); */
+  border-left: solid 5px var(--buttonActiveColor);
+  border-right: solid 5px var(--buttonActiveColor);
 
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .carouselSlider {
