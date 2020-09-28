@@ -4,28 +4,44 @@ const carouselSlider = document.querySelector(".carouselSlider")
 let carouselImages = document.querySelectorAll(".carouselSlider img")
 
 let counter = 1
-const imgSize = carouselImages[counter].clientWidth + 24;
+let slideInterval
+
+const imgSize = carouselImages[counter].clientWidth + 14;
 const interval = 1000;
-// carouselSlider.style.transform = `translateX(-${imgSize * counter}px)`
+carouselSlider.style.transform = `translateX(${-imgSize * counter}px)`
 
 
-function carouselLoop() {
-  setInterval(() => {
-    carouselSlider.style.transition = `700ms ease-out`
-    carouselSlider.style.transform = `translateX(${-imgSize * counter}px)`
-    counter++
+const carouselLoop = () => {
+  slideInterval = setInterval(() => {
+    moveToNextImg()
   }, interval)
 }
 
+const getCarouselSlide = () => document.querySelectorAll(".carouselSlider img");
+
+
 carouselSlider.addEventListener('transitionend', () => {
-  carouselImages = document.querySelectorAll(".carouselSlider img")
-  if (carouselImages[counter].id === "lastImg") {
-    console.log('oi')
-    carouselSlider.style.transition = "none"
-    counter = 1
-    carouselSlider.style.transform = `translateX(${0}px)`
+  slides = getCarouselSlide();
+  if (slides[counter].id === "lastImg") {
+    carouselSlider.style.transition = 'none';
+    counter = 1;
+    carouselSlider.style.transform = `translateX(${-imgSize * counter}px)`;
   }
-})
+
+  if (slides[counter].id === "firstImg") {
+    carouselSlider.style.transition = 'none';
+    counter = slides.length - 2;
+    carouselSlider.style.transform = `translateX(${-imgSize * counter}px)`;
+  }
+});
 
 
-carouselLoop()
+
+
+const moveToNextImg = () => {
+  counter++
+  carouselSlider.style.transition = `700ms ease-out`
+  carouselSlider.style.transform = `translateX(${-imgSize * counter}px)`
+}
+
+// carouselLoop()

@@ -37,8 +37,9 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-  width: 1560px;
-  border: solid 1px red;
+  width: 1542px;
+  border-left: solid 5px var(--buttonActiveColor);
+  border-right: solid 5px var(--buttonActiveColor);
 
   overflow: hidden;
 }
@@ -56,10 +57,10 @@
 }
 
 .carouselContainer img {
-  margin: 5px 10px 5px 10px;
+  margin: 5px 5px 5px 5px;
   object-fit: cover;
   width: 500px;
 
-  border: solid white 2px;
+  border: solid var(--buttonHoverColor) 2px;
   border-radius: 10px;
 }
