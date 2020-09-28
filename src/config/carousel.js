@@ -57,4 +57,4 @@ const moveToNextImg = () => {
   carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 }
 
-carouselLoop()
+// carouselLoop()

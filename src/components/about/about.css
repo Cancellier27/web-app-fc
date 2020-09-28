@@ -34,15 +34,17 @@
 }
 
 .carouselContainer {
+  position: relative;
   margin: 0;
   padding: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
   width: 1540px;
   height: 300px;
   border-left: solid 5px var(--buttonActiveColor);
   border-right: solid 5px var(--buttonActiveColor);
-
   overflow: hidden;
+
 }
 
 .carouselSlider {
@@ -69,4 +71,29 @@
 
   border: solid var(--buttonHoverColor) 2px;
   border-radius: 10px;
+}
+
+.buttonsSlider {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  width: 1530px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prevButton,
+.nextButton {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  font-size: 40px;
+  border: none;
+}
+
+.prevButton:focus,
+.nextButton:focus {
+  outline: none;
 }
