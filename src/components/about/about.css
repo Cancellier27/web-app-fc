@@ -73,6 +73,7 @@
   border-radius: 10px;
 }
 
+
 .buttonsSlider {
   position: absolute;
   top: 45%;
@@ -89,11 +90,16 @@
   padding: 0;
   cursor: pointer;
   background: transparent;
-  font-size: 40px;
+  font-size: 35px;
   border: none;
 }
 
 .prevButton:focus,
 .nextButton:focus {
   outline: none;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  transform: scale(1.1);
 }

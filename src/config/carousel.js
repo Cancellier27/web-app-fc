@@ -1,10 +1,12 @@
 // File for creation of carousel animation
 const carouselContainer = document.querySelector(".carouselContainer")
 const carouselSlider = document.querySelector(".carouselSlider")
+const nextButton = document.querySelector(".nextButton")
+const prevButton = document.querySelector(".prevButton")
 
 let imgSlide = document.querySelectorAll(".slidesImg")
 let counter = 1
-// let slideInterval
+let slideInterval
 
 const firstCloneSlide = imgSlide[0].cloneNode(true)
 const secondCloneSlide = imgSlide[1].cloneNode(true)
@@ -23,7 +25,7 @@ carouselSlider.prepend(lastCloneSlide)
 const imgWidth = imgSlide[counter].clientWidth + 10;
 carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 
-const interval = 4000;
+const interval = 5000;
 
 
 const carouselLoop = () => {
@@ -52,9 +54,31 @@ carouselSlider.addEventListener('transitionend', () => {
 
 
 const moveToNextImg = () => {
+  slides = getCarouselImgSlide();
+  if (counter >= slides.length + 1) return
   counter++
   carouselSlider.style.transition = `700ms ease-out`
   carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 }
 
-// carouselLoop()
+const moveToPrevImg = () => {
+  slides = getCarouselImgSlide();
+  // if (counter < 0 ) {
+  //   counter = 1
+  //   return
+  // }
+  counter--
+  carouselSlider.style.transition = `700ms ease-out`
+  carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
+}
+
+nextButton.addEventListener('click', moveToNextImg);
+prevButton.addEventListener('click', moveToPrevImg);
+
+carouselContainer.addEventListener('mouseenter', () => {
+  clearInterval(slideInterval);
+});
+
+carouselContainer.addEventListener('mouseleave', carouselLoop);
+
+carouselLoop()
