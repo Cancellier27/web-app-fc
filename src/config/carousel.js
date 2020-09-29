@@ -65,10 +65,10 @@ const moveToPrevImg = () => {
 
 document.onkeydown = function (e) {
   switch (e.keyCode) {
-    case 37:
+    case 39:
       moveToNextImg();
       break;
-    case 39:
+    case 37:
       moveToPrevImg();
       break;
   }
