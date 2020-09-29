@@ -9,23 +9,23 @@ let counter = 1
 let slideInterval
 
 const firstCloneSlide = imgSlide[0].cloneNode(true)
-const secondCloneSlide = imgSlide[1].cloneNode(true)
-const thirdCloneSlide = imgSlide[2].cloneNode(true)
+// const secondCloneSlide = imgSlide[1].cloneNode(true)
+// const thirdCloneSlide = imgSlide[2].cloneNode(true)
 const lastCloneSlide = imgSlide[imgSlide.length - 1].cloneNode(true)
 
 firstCloneSlide.id = 'firstImg'
 lastCloneSlide.id = 'lastImg'
 
 carouselSlider.append(firstCloneSlide)
-carouselSlider.append(secondCloneSlide)
-carouselSlider.append(thirdCloneSlide)
+// carouselSlider.append(secondCloneSlide)
+// carouselSlider.append(thirdCloneSlide)
 carouselSlider.prepend(lastCloneSlide)
 
 
 const imgWidth = imgSlide[counter].clientWidth + 10;
 carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 
-const interval = 5000;
+const interval = 3000;
 
 
 const carouselLoop = () => {
@@ -55,7 +55,7 @@ carouselSlider.addEventListener('transitionend', () => {
 
 const moveToNextImg = () => {
   slides = getCarouselImgSlide();
-  if (counter >= slides.length + 1) return
+  if (counter >= slides.length - 1) return
   counter++
   carouselSlider.style.transition = `700ms ease-out`
   carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
@@ -63,10 +63,7 @@ const moveToNextImg = () => {
 
 const moveToPrevImg = () => {
   slides = getCarouselImgSlide();
-  // if (counter < 0 ) {
-  //   counter = 1
-  //   return
-  // }
+  if (counter <= 0 ) return
   counter--
   carouselSlider.style.transition = `700ms ease-out`
   carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`

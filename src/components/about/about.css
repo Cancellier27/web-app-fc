@@ -39,8 +39,8 @@
   padding: 0;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 1540px;
-  height: 300px;
+  width: 1020px;
+  height: 500px;
   border-left: solid 5px var(--buttonActiveColor);
   border-right: solid 5px var(--buttonActiveColor);
   overflow: hidden;
@@ -66,8 +66,8 @@
 
 .slidesImg img {
   object-fit: cover;
-  width: 500px;
-  height: 290px;
+  width: 1000px;
+  height: 490px;
 
   border: solid var(--buttonHoverColor) 2px;
   border-radius: 10px;
@@ -78,7 +78,7 @@
   position: absolute;
   top: 45%;
   left: 0%;
-  width: 1530px;
+  width: 1010px;
   display: flex;
   justify-content: space-between;
   align-items: center;
