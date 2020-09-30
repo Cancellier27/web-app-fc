@@ -19,6 +19,7 @@ carouselSlider.prepend(lastCloneSlide)
 
 
 const imgWidth = imgSlide[counter].clientWidth + 10;
+
 carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 
 const interval = 5000;
@@ -51,7 +52,7 @@ const moveToNextImg = () => {
   slides = getCarouselImgSlide();
   if (counter >= slides.length - 1) return
   counter++
-  carouselSlider.style.transition = `700ms ease-out`
+  carouselSlider.style.transition = `600ms ease-out`
   carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 }
 
@@ -59,7 +60,7 @@ const moveToPrevImg = () => {
   slides = getCarouselImgSlide();
   if (counter <= 0) return
   counter--
-  carouselSlider.style.transition = `700ms ease-out`
+  carouselSlider.style.transition = `600ms ease-out`
   carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 }
 

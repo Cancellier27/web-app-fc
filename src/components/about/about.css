@@ -40,7 +40,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   width: 1020px;
-  height: 500px;
+  height: 550px;
   border-left: solid 5px var(--buttonActiveColor);
   border-right: solid 5px var(--buttonActiveColor);
   overflow: hidden;
@@ -62,15 +62,28 @@
 .slidesImg {
   margin: 5px 5px 5px 5px;
   /* padding: 0; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .slidesImg img {
   object-fit: cover;
+  object-position: top;
   width: 1000px;
-  height: 490px;
+  height: 460px;
 
   border: solid var(--buttonHoverColor) 2px;
   border-radius: 10px;
+}
+
+.description {
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  background: white;
 }
 
 
