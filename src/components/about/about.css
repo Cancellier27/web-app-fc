@@ -80,12 +80,39 @@
 }
 
 .description {
-  height: 80px;
   margin: 0;
   padding: 0;
-  background: white;
+  margin-top: 1px;
+  padding: 5px;
+  height: 80px;
+  background: var(--buttonHoverColor);
+  width: 100%;
+  color: var(--mainColor);
+
+  border: solid var(--buttonHoverColor) 2px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.buttonLinkDesc {
+  /* padding: 10px 0px; */
+  /* margin-top: 20px; */
+  width: 170px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 1.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description p {
+  font-size: 1.2em;
+}
 
 .buttonsSlider {
   position: absolute;
