@@ -22,7 +22,7 @@ const imgWidth = imgSlide[counter].clientWidth + 10;
 
 carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 
-const interval = 5000000;
+const interval = 5000;
 
 const carouselLoop = () => {
   slideInterval = setInterval(() => {

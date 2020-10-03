@@ -27,6 +27,8 @@
   margin: 50px;
   padding: 20px;
   display: flex;
+
+  border-bottom: solid 1px white;
 }
 
 .siteLink {
