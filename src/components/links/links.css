@@ -87,7 +87,7 @@ a {
 
 @media (max-width: 600px) {
   .linksContainer {
-    width: 350px;
+    width: 300px;
   }
 
   .LinkDiv {
@@ -95,7 +95,7 @@ a {
   }
 
   .LinkDiv p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .LINKS {
@@ -113,7 +113,7 @@ a {
   }
 
   .linksContainer {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .HomeLink {
