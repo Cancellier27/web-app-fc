@@ -6,7 +6,7 @@
 :root {
   --headerHeight: 100px;
   --headerHeightMobile: 68px;
-  
+
   --footerHeight: 150px;
   --footerHeightMobile: 50px;
 
@@ -207,7 +207,7 @@ main {
 }
 
 .skills {
-  font-size: 1em;
+  font-size: 1.4em;
   padding: 0px 10px 10px 10px;
   margin: 0px 10px 10px 10px;
   color: rgb(160, 160, 160);
@@ -305,7 +305,7 @@ main {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 690px) {
   .homeNavBar {
     margin-left: 20px;
     margin-bottom: 30px;
@@ -333,7 +333,7 @@ main {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
   .hello {
     font-size: 3.5em;
   }
@@ -375,4 +375,5 @@ main {
   main {
     min-height: calc(100vh - var(--footerHeightMobile) - var(--headerHeightMobile));
 
+  }
 }
