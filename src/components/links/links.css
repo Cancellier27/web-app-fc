@@ -1,57 +1,69 @@
+.mainLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introductionLinks {
+  width: 100%;
+  margin-top: 70px;
+  margin-left: 150px;
+}
+
 .linksResume {
   background: none;
   font-size: 1.6em;
+  font-weight: normal;
   padding: 10px;
   margin: 10px;
   color: whitesmoke;
 }
 
 .homeNavBarLinks {
-  margin-left: 100px;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.homeNavBarLinks h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5em;
-}
-
 .linksContainer {
   margin: 0;
   padding: 0;
+
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.LinkDiv {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-
-  /* background-color: red; */
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
 }
 
-.linksContainer a {
+.LINKS {
   padding: 0;
   margin: 0;
-  margin-top: 20px;
-  text-decoration: none;
-  font-size: 2em;
   color: white;
-  width: 250px;
-  height: 50px;
-  border-radius: 15px;
-
-  
-  padding-top: 5px;
-  padding-left: 5px;
-
+  font-size: 6em;
 }
 
-.linksContainer a:hover {
-  background-color: var(--buttonHoverColor);
+.LINKS:hover {
+  font-size: 6.1em;
 }
 
-.linksContainer a:active {
-  border: solid white 2px;
+.LINKS:active {
+  font-size: 6em;
+}
+
+.LinkDiv p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 1.4em;
 }
