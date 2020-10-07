@@ -61,9 +61,73 @@
   font-size: 6em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .LinkDiv p {
   margin: 0;
   padding: 0;
   color: white;
   font-size: 1.4em;
+  
+}
+
+@media (max-width: 700px) {
+.linksContainer {
+  width: 500px;
+}
+
+.introductionLinks {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+}
+
+@media (max-width: 600px) {
+.linksContainer {
+  width: 350px;
+}
+
+.LinkDiv {
+  height: 70px;
+}
+
+.LinkDiv p {
+  font-size: 1em;
+}
+
+.LINKS {
+  font-size: 3em;
+}
+
+.introductionLinks {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.linksResume {
+  font-size: 1.2em;  
+}
+
+.linksContainer {
+  margin-bottom: 30px;
+}
+
+.HomeLink {
+  display: none;
+}
+
+}
+
+@media (max-width: 350px) {
+  .linksContainer {
+    width: 300px;
+  }
+
+  .LinkDiv p {
+    font-size: 0.8em;
+  }
 }
