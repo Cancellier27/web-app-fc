@@ -4,7 +4,7 @@
 
 .aboutContainer {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -41,7 +41,8 @@
   padding: 0;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: calc((100vw / 2) + 10px); /* 1020px */
+  width: calc((100vw / 2) + 10px);
+  /* 1020px */
   height: calc(100vh / 1.8);
   border-left: solid 5px var(--buttonActiveColor);
   border-right: solid 5px var(--buttonActiveColor);
@@ -75,7 +76,7 @@
 
   object-fit: fill;
   /* object-position: top left; */
-  
+
   width: calc(100vw / 2 - 10px);
   height: 80%;
 
@@ -107,7 +108,7 @@
   width: 100%;
   height: 60px;
   padding: 0 15px 0 15px;
-  
+
   text-decoration: none;
   font-size: 1em;
 
@@ -149,12 +150,4 @@
 .prevButton:hover,
 .nextButton:hover {
   transform: scale(1.1);
-}
-
-
-
-
-
-.a {
-  back
 }
