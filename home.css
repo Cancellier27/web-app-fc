@@ -5,7 +5,10 @@
 
 :root {
   --headerHeight: 100px;
+  --headerHeightMobile: 68px;
+  
   --footerHeight: 150px;
+  --footerHeightMobile: 50px;
 
   --headerColor: rgb(28, 25, 53);
   --buttonHoverColor: rgb(34, 34, 39);
@@ -204,8 +207,8 @@ main {
 }
 
 .skills {
-  paddifont-size: 1em;
-  ng: 0px 10px 10px 10px;
+  font-size: 1em;
+  padding: 0px 10px 10px 10px;
   margin: 0px 10px 10px 10px;
   color: rgb(160, 160, 160);
 }
@@ -356,4 +359,20 @@ main {
   main {
     justify-content: space-between;
   }
+}
+
+@media (max-width: 480px) {
+
+
+  footer {
+    height: var(--footerHeightMobile);
+  }
+
+  header {
+    height: var(--headerHeightMobile);
+  }
+
+  main {
+    min-height: calc(100vh - var(--footerHeightMobile) - var(--headerHeightMobile));
+
 }

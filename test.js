@@ -1,5 +1,5 @@
 // function missing(s) {
- 
+
 // }
 
 // console.log(missing("123567")); // ,4
@@ -13,7 +13,7 @@ function chunkArrayInGroups(arr, size) {
   let finalArr = []
   for (let i = 0; i < iteratinons; i += size) {
     finalArr.push(arr.slice(i, i + size))
-  } 
+  }
 
   return finalArr;
 }
