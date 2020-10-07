@@ -204,7 +204,7 @@ main {
 }
 
 .skills {
-  padding: 0px 10px 10px 10px;
+  paddifont-size: 1em;ng: 0px 10px 10px 10px;
   margin: 0px 10px 10px 10px;
   color: rgb(160, 160, 160);
 } 
@@ -270,7 +270,6 @@ main {
     margin-left: 0px;
     margin-right: 20px;
   }
-
   
   main {
     flex-direction: column;
@@ -293,20 +292,12 @@ main {
     height: auto;
   }
 
-
-
-
 }
 
 @media (max-width: 990px) {
   .hello {
-    background: none;
     font-size: 6em;
-    padding: 10px;
-    margin: 10px;
-    color: whitesmoke;
   }
-
 }
 
 @media (max-width: 680px) {
@@ -315,7 +306,6 @@ main {
     margin-bottom: 30px;
     flex-direction: row;
     justify-content: flex-start;
-    
   }
 
   .introduction {
@@ -336,6 +326,32 @@ main {
     align-items: center;
     justify-content: center;
   }
-
 }
 
+@media (max-width: 530px) {
+  .hello {
+    font-size: 3.5em;
+  }
+
+  .skills {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  .button {
+  margin-top: 20px;
+  width: 170px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 1.1em;
+  }
+
+  .introduction {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  main {
+    justify-content: space-between;
+  }
+}
