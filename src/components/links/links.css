@@ -123,6 +123,12 @@ a {
   }
 }
 
+@media (max-width: 480px) {
+  .linksResume {
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 350px) {
   .linksContainer {
     width: 300px;
