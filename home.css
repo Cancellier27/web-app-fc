@@ -75,20 +75,10 @@ header {
 
 .nav_bar li a {
   padding: 5px 10px;
-  color: white;
   text-decoration: none;
   font-size: 1.3em;
 }
 
-.nav_bar li a:hover {
-  border-radius: 15%;
-  background-color: var(--buttonHoverColor);
-}
-
-.nav_bar li a:active {
-  color: lightgray;
-  background-color: var(--buttonActiveColor);
-}
 
 /*  Footer CSS  */
 
@@ -254,8 +244,15 @@ main {
   border-radius: 10px;
 }
 
+.lightGray {
+  color: lightgray;
+  border: solid 2px lightgray;
+  border-radius: 10px;
+}
+
 .red:hover,
-.blue:hover {
+.blue:hover,
+.lightGray:hover {
   font-weight: bold;
 }
 
@@ -266,6 +263,11 @@ main {
 
 .blue:active {
   background-color: cyan;
+  color: black
+}
+
+.lightGray:active {
+  background-color: lightgray;
   color: black
 }
 

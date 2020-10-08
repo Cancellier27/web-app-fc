@@ -24,8 +24,9 @@
   margin: 0;
   padding: 0;
 
-  margin: 50px;
-  padding: 20px;
+  width: 95%;
+  /* margin: 50px; */
+  padding: 50px 0;
   display: flex;
 
   border-bottom: solid 1px white;
@@ -150,4 +151,27 @@
 .prevButton:hover,
 .nextButton:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 420px) {
+  .text {
+    font-size: 1em;
+  }
+
+  .lightGray {
+    display: none;
+  }
+
+  .textContainer {
+    margin: 0;
+    padding: 0;
+  
+    width: 95%;
+    /* margin: 50px; */
+    padding: 25px 0 30px 0;
+    display: flex;
+  
+    border-bottom: solid 1px white;
+  }
+
 }
