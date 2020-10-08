@@ -23,9 +23,7 @@
 .textContainer {
   margin: 0;
   padding: 0;
-
   width: 95%;
-  /* margin: 50px; */
   padding: 50px 0;
   display: flex;
 
@@ -47,9 +45,8 @@
   padding: 0;
   margin-top: 10px;
   margin-bottom: 50px;
-  width: calc((100vw / 2) + 10px);
-  /* 1020px */
-  height: calc(100vh / 1.8);
+  width: calc((100vw / 1.5));
+  height: calc(100vw / 2.5);
   border-left: solid 5px var(--buttonActiveColor);
   border-right: solid 5px var(--buttonActiveColor);
   overflow: hidden;
@@ -69,23 +66,16 @@
 }
 
 .slidesImg {
-  margin: 5px 5px 5px 5px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 1000px; */
 }
 
 .slidesImg img {
-
   object-fit: fill;
-  /* object-position: top left; */
-
-  width: calc(100vw / 2 - 10px);
+  width: calc(100vw / 1.5 - 10px);
   height: 80%;
-
   border: solid var(--buttonHoverColor) 2px;
   border-radius: 10px;
 }
@@ -99,33 +89,28 @@
   background: var(--buttonHoverColor);
   width: 100%;
   color: var(--mainColor);
-
   border: solid var(--buttonHoverColor) 2px;
   border-radius: 10px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .buttonLinkDesc {
-  /* padding: 10px 0px; */
-  /* margin-top: 20px; */
-  width: 100px;
+  width: 90px;
   height: 50px;
   padding: 0 15px 0 15px;
-
   text-decoration: none;
-  font-size: 0.9em;
-
+  font-size: 1.2em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .description p {
-  max-width: 75%;
-  font-size: 1.2em;
+  max-width: 85%;
+  font-size: 1.5em;
+  margin-right: 10px;
 }
 
 .buttonsSlider {
@@ -156,6 +141,64 @@
 .prevButton:hover,
 .nextButton:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1100px) {
+  .description p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 900px) {
+  .description p {
+    font-size: 0.8em;
+  }
+
+  .slidesImg img {
+    height: 70%;
+  }
+
+  .description {
+    height: 30%;
+  }
+
+  .buttonLinkDesc {
+    width: 60px;
+    height: 35px;
+    font-size: 1em;
+  }
+
+  .buttonsSlider {
+    top: 35%;
+  }
+
+  .prevButton,
+  .nextButton {
+    font-size: 25px;
+}
+
+}
+
+@media (max-width: 700px) {
+  .carouselContainer {
+    width: calc((100vw / 1.1));
+    height: calc(100vw / 1.3);
+  }
+
+  .slidesImg img {
+    width: calc(100vw / 1.1 - 10px);
+  }
+
+  .carouselTitle {
+    font-size: 1em;
+    padding: 10px;
+    width: 95%;
+  }
+
+  .buttonLinkDesc {
+    font-size: 0.8em;
+  }
+
 }
 
 @media (max-width: 420px) {

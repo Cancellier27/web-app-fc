@@ -18,7 +18,7 @@ carouselSlider.append(firstCloneSlide)
 carouselSlider.prepend(lastCloneSlide)
 
 
-const imgWidth = imgSlide[counter].clientWidth + 10;
+const imgWidth = imgSlide[counter].clientWidth;
 
 carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
 
