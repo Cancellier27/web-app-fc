@@ -6,16 +6,34 @@
 :root {
   --headerHeight: 100px;
   --headerHeightMobile: 68px;
+  --headerBorderColor: lightgray;
 
   --footerHeight: 150px;
   --footerHeightMobile: 50px;
+  --footerBorderColor: lightgray;
 
-  --headerColor: rgb(28, 25, 53);
-  --buttonHoverColor: rgb(34, 34, 39);
-  --buttonActiveColor: rgb(25, 24, 29);
+  --mainBordersColor: white;
+  
+  --carouselDescriptionColor: #222227;
+  --carouselBordersColor: #19181d;
 
-  --footerColor: rgb(25, 21, 56);
-  --mainColor: whitesmoke
+  --redColor: red;
+  --redActiveBackground: red;
+  --blueColor: cyan;
+  --blueActiveBackground: cyan;
+  --lightGrayColor: lightgray;
+  --lightGrayActiveBackground: lightgray;
+  --textActiveColor: black;
+
+  --generalTextColor: lightgray;
+  --brighterTextColor: white;
+  --commentaryColor: #a0a0a0;
+  --linksInTextColor: tomato;
+
+  --iconGeneralColor: lightgray;
+  --iconHoverColor: white;
+  --iconActiveColor: lightgray;
+
 }
 
 .lagosta {
@@ -41,17 +59,16 @@ body {
 header {
   margin: 0;
   padding: 0;
-  /* background: var(--headerColor); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--headerHeight);
   width: 100%;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px var(--headerBorderColor);
 }
 
 .myName {
-  color: white;
+  color: var(--brighterTextColor);
   margin: 0;
   padding: 0;
   font-size: 1.5em;
@@ -81,26 +98,24 @@ header {
 
 
 /*  Footer CSS  */
-
 h3 {
   font-size: 1.3em;
-  color: lightgray
+  color: var(--generalTextColor);
 }
 
 footer {
   margin: 0;
   padding: 0;
   height: var(--footerHeight);
-  /* background: var(--footerColor); */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: solid 1px white;
+  border-top: solid 1px var(--footerBorderColor);
 }
 
 
 .forDate {
-  color: lightgray;
+  color: var(--generalTextColor);
   padding-top: 20px;
   margin: 0;
   margin-left: 50px;
@@ -116,7 +131,7 @@ footer {
 }
 
 .createdSay p {
-  color: lightgray;
+  color: var(--generalTextColor);
 }
 
 .linksSocial {
@@ -126,22 +141,21 @@ footer {
 }
 
 .linksSocial i {
-  color: lightgray;
+  color: var(--iconGeneralColor);
   margin: 0;
   padding: 0;
   transform: scale(3);
 }
 
 .linksSocial i:hover {
-  color: white;
+  color: var(--iconHoverColor);
 }
 
 .linksSocial i:active {
-  color: lightgray;
+  color: var(--iconActiveColor);
 }
 
 /* Main CSS  */
-
 main {
   min-height: calc(100vh - var(--footerHeight) - var(--headerHeight));
   margin: 0px;
@@ -150,7 +164,6 @@ main {
   display: flex;
 }
 
-
 .introduction {
   margin: 0;
   padding: 0;
@@ -158,7 +171,6 @@ main {
   margin-top: 100px;
   width: 800px;
   height: auto;
-  background-color: var(--mainColor);
   background: none;
 }
 
@@ -171,15 +183,12 @@ main {
   margin: 0;
   padding: 0;
   height: 300px;
-  background-color: var(--mainColor);
 }
 
 .carousel {
   margin: 0;
   padding: 0;
   height: 300px;
-  background-color: var(--mainColor);
-
 }
 
 .text {
@@ -193,14 +202,14 @@ main {
   font-size: 10em;
   padding: 10px;
   margin: 10px;
-  color: whitesmoke;
+  color: var(--generalTextColor);
 }
 
 .skills {
   font-size: 1.4em;
   padding: 0px 10px 10px 10px;
   margin: 0px 10px 10px 10px;
-  color: rgb(160, 160, 160);
+  color: var(--commentaryColor);
 }
 
 .homeNavBar {
@@ -218,35 +227,32 @@ main {
 }
 
 /*  button css  */
-
 .button {
-  /* padding: 10px 0px; */
   margin-top: 20px;
   width: 170px;
   height: 60px;
   text-decoration: none;
   font-size: 1.5em;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .red {
-  color: red;
-  border: solid 2px red;
+  color: var(--redColor);
+  border: solid 2px var(--redColor);
   border-radius: 10px;
 }
 
 .blue {
-  color: cyan;
-  border: solid 2px cyan;
+  color: var(--blueColor);
+  border: solid 2px var(--blueColor);
   border-radius: 10px;
 }
 
 .lightGray {
-  color: lightgray;
-  border: solid 2px lightgray;
+  color: var(--lightGrayColor);
+  border: solid 2px var(--lightGrayColor);
   border-radius: 10px;
 }
 
@@ -257,18 +263,18 @@ main {
 }
 
 .red:active {
-  background-color: red;
-  color: black
+  background-color: var(--redActiveBackground);
+  color: var(--textActiveColor)
 }
 
 .blue:active {
-  background-color: cyan;
-  color: black
+  background-color: var(--blueActiveBackground);
+  color: var(--textActiveColor)
 }
 
 .lightGray:active {
-  background-color: lightgray;
-  color: black
+  background-color: var(--lightGrayActiveBackground);
+  color: var(--textActiveColor)
 }
 
 @media (max-width: 1300px) {
@@ -298,7 +304,6 @@ main {
     width: auto;
     height: auto;
   }
-
 }
 
 @media (max-width: 990px) {

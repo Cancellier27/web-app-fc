@@ -13,10 +13,8 @@ const lastCloneSlide = imgSlide[imgSlide.length - 1].cloneNode(true)
 
 firstCloneSlide.id = 'firstImg'
 lastCloneSlide.id = 'lastImg'
-
 carouselSlider.append(firstCloneSlide)
 carouselSlider.prepend(lastCloneSlide)
-
 
 const imgWidth = imgSlide[counter].clientWidth;
 
@@ -47,7 +45,6 @@ carouselSlider.addEventListener('transitionend', () => {
     carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`;
   }
 });
-
 
 const moveToNextImg = () => {
   slides = getCarouselImgSlide();

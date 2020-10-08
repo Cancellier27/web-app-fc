@@ -48,19 +48,19 @@
 .LINKS {
   padding: 0;
   margin: 0;
-  color: white;
+  color: var(--iconGeneralColor);
   font-size: 6em;
 }
 
 .LinkDiv a:hover,
 .LinkDiv p:hover {
-  color: lightgrey;
+  color: var(--iconHoverColor);
   text-decoration: underline;
 }
 
 .LinkDiv a:active,
 .LinkDiv p:active {
-  color: white;
+  color: var(--iconActiveColor);
 }
 
 a {
@@ -70,9 +70,8 @@ a {
 .LinkDiv p {
   margin: 0;
   padding: 0;
-  color: white;
+  color: var(--iconGeneralColor);
   font-size: 1.4em;
-
 }
 
 @media (max-width: 700px) {
@@ -84,7 +83,6 @@ a {
     margin-left: 30px;
     margin-right: 30px;
   }
-
 }
 
 @media (max-width: 600px) {

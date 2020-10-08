@@ -9,15 +9,14 @@
   align-items: center;
 }
 
-
 .first-letter {
-  color: lightgrey;
+  color: var(--generalTextColor);
   font-family: 'Lobster', cursive;
   font-size: 4em;
 }
 
 .text {
-  color: lightgrey;
+  color: var(--generalTextColor);
 }
 
 .textContainer {
@@ -26,12 +25,11 @@
   width: 95%;
   padding: 50px 0;
   display: flex;
-
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px var(--mainBordersColor);
 }
 
 .siteLink {
-  color: tomato;
+  color: var(--linksInTextColor);
 }
 
 .carouselTitle {
@@ -47,21 +45,17 @@
   margin-bottom: 50px;
   width: calc((100vw / 1.5));
   height: calc(100vw / 2.5);
-  border-left: solid 5px var(--buttonActiveColor);
-  border-right: solid 5px var(--buttonActiveColor);
+  border-left: solid 5px var(--carouselBordersColor);
+  border-right: solid 5px var(--carouselBordersColor);
   overflow: hidden;
-
 }
 
 .carouselSlider {
   margin: 0;
   padding: 0;
-
   height: 100%;
   width: 100%;
-
   display: flex;
-
   transform: translateX(0px);
 }
 
@@ -76,7 +70,7 @@
   object-fit: fill;
   width: calc(100vw / 1.5 - 10px);
   height: 80%;
-  border: solid var(--buttonHoverColor) 2px;
+  border: solid 2px var(--carouselBordersColor);
   border-radius: 10px;
 }
 
@@ -86,10 +80,10 @@
   margin-top: 1px;
   padding: 15px;
   height: 20%;
-  background: var(--buttonHoverColor);
+  background: var(--carouselDescriptionColor);
   width: 100%;
-  color: var(--mainColor);
-  border: solid var(--buttonHoverColor) 2px;
+  color: var(--generalTextColor);
+  border: solid var(--carouselBordersColor) 2px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -175,8 +169,7 @@
   .prevButton,
   .nextButton {
     font-size: 25px;
-}
-
+  }
 }
 
 @media (max-width: 700px) {
@@ -198,7 +191,6 @@
   .buttonLinkDesc {
     font-size: 0.8em;
   }
-
 }
 
 @media (max-width: 420px) {
