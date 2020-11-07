@@ -8,6 +8,4 @@ function changeColor() {
     document.body.style.backgroundImage = 'url("./src/assets/backgroundAll.png")'
     watch = 'black'
   }
-
-
 }
