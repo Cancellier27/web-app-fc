@@ -1,16 +1,16 @@
-.mainLink {
+main.mainLink {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.introductionLinks {
+main.mainLink .introductionLinks {
   width: 80%;
   margin-top: 70px;
 }
 
-.linksResume {
+main.mainLink .introductionLinks .linksResume {
   background: none;
   font-size: 1.6em;
   font-weight: normal;
@@ -19,14 +19,14 @@
   color: whitesmoke;
 }
 
-.homeNavBarLinks {
+main.mainLink  .homeNavBarLinks {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.linksContainer {
+main.mainLink  .homeNavBarLinks .linksContainer {
   margin: 0;
   padding: 0;
 
@@ -37,7 +37,7 @@
   width: 600px;
 }
 
-.LinkDiv {
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,29 +45,29 @@
   height: 150px;
 }
 
-.LINKS {
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv .LINKS {
   padding: 0;
   margin: 0;
   color: var(--iconGeneralColor);
   font-size: 6em;
 }
 
-.LinkDiv a:hover,
-.LinkDiv p:hover {
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv a:hover,
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p:hover {
   color: var(--iconHoverColor);
   text-decoration: underline;
 }
 
-.LinkDiv a:active,
-.LinkDiv p:active {
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv a:active,
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p:active {
   color: var(--iconActiveColor);
 }
 
-a {
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv a {
   text-decoration: none;
 }
 
-.LinkDiv p {
+main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
   margin: 0;
   padding: 0;
   color: var(--iconGeneralColor);
@@ -75,48 +75,45 @@ a {
 }
 
 @media (max-width: 700px) {
-  .linksContainer {
+  main.mainLink  .homeNavBarLinks.linksContainer {
     width: 500px;
   }
 
-  .introductionLinks {
+  main.mainLink .introductionLinks {
     margin-left: 30px;
     margin-right: 30px;
   }
 }
 
 @media (max-width: 600px) {
-  .linksContainer {
+  main.mainLink  .homeNavBarLinks .linksContainer {
     width: 300px;
+    margin-bottom: 60px;
   }
 
-  .LinkDiv {
+  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv {
     height: 75px;
   }
 
-  .LinkDiv p {
+  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
     font-size: 0.8em;
   }
 
-  .LINKS {
+  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv .LINKS {
     font-size: 3em;
   }
 
-  .introductionLinks {
+  main.mainLink .introductionLinks {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 30px;
   }
 
-  .linksResume {
+  main.mainLink .introductionLinks .linksResume {
     font-size: 1.2em;
   }
 
-  .linksContainer {
-    margin-bottom: 60px;
-  }
-
-  .HomeLink {
+  header .nav_bar .HomeLink {
     display: none;
   }
 }
@@ -128,11 +125,11 @@ a {
 }
 
 @media (max-width: 350px) {
-  .linksContainer {
+  main.mainLink .introductionLinks .linksContainer {
     width: 300px;
   }
 
-  .LinkDiv p {
+  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
     font-size: 0.8em;
   }
 }

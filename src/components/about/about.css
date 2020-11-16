@@ -1,216 +1,229 @@
-* {
-  box-sizing: border-box;
-}
-
 .selected {
-  opacity: 1 !important; 
+  opacity: 1 !important;
 }
 
-.aboutContainer {
+main.aboutContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.first-letter {
+main.aboutContainer .textContainer {
+  margin: 0;
+  padding: 0;
+
+  width: 95%;
+  padding: 50px 0;
+  display: flex;
+  border-bottom: dashed 1px var(--mainBordersColor);
+}
+
+main.aboutContainer .textContainer .text {
+  color: var(--generalTextColor);
+}
+
+main.aboutContainer .textContainer .text .first-letter {
   color: var(--generalTextColor);
   font-family: 'Lobster', cursive;
   font-size: 4em;
 }
 
-.text {
-  color: var(--generalTextColor);
-}
-
-.textContainer {
-  margin: 0;
-  padding: 0;
-  width: 95%;
-  padding: 50px 0;
-  display: flex;
-  border-bottom: solid 1px var(--mainBordersColor);
-}
-
-.siteLink {
+main.aboutContainer .textContainer .text .siteLink {
   color: var(--linksInTextColor);
 }
 
-.carouselTitle {
+main .carouselTitle {
   margin: 50px 0 10px 0;
-  font-size: 1.4em;
+  font-size: 1.5em;
+  color: var(--generalTextColor);
 }
 
-.carouselContainer {
+main .carouselContainer {
   position: relative;
   margin: 0;
   padding: 0;
   margin-top: 10px;
   margin-bottom: 50px;
-  width: calc((100vw / 1.5));
+  
   height: calc(100vw / 2.5);
+  width: calc((100vw / 1.5));
+  
   border-left: solid 5px var(--carouselBordersColor);
   border-right: solid 5px var(--carouselBordersColor);
-  overflow: hidden;
 }
 
-.carouselSlider {
+main .carouselContainer .carouselSlider {
   position: relative;
+
   margin: 0;
   padding: 0;
+
   height: 100%;
   width: 100%;
   display: flex;
   transform: translateX(0px);
 }
 
-.slidesImg {
+main .carouselContainer .carouselSlider .slidesImg {
   position: absolute;
-  opacity: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
   transition: opacity 0.3s ease-in;
 }
 
-.slidesImg img {
-  object-fit: fill;
-  width: calc(100vw / 1.5 - 10px);
+main .carouselContainer .carouselSlider .slidesImg img {
   height: 80%;
+  width: calc(100vw / 1.5 - 10px);
+
   border: solid 2px var(--carouselBordersColor);
   border-radius: 10px;
+  
+  object-fit: fill;
 }
 
-.description {
+main .carouselContainer .carouselSlider .slidesImg .description {
   margin: 0;
-  padding: 0;
   margin-top: 1px;
   padding: 15px;
+
   height: 20%;
-  background: var(--carouselDescriptionColor);
   width: 100%;
+  
+  background: var(--carouselDescriptionColor);
   color: var(--generalTextColor);
   border: solid var(--carouselBordersColor) 2px;
   border-radius: 10px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.buttonLinkDesc {
+main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
   width: 90px;
   height: 50px;
   padding: 0 15px 0 15px;
-  text-decoration: none;
+
   font-size: 1.2em;
+  text-decoration: none;
+  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.description p {
+main .carouselContainer .carouselSlider .slidesImg .description p {
   max-width: 85%;
-  font-size: 1.5em;
   margin-right: 10px;
+  font-size: 1.5em;
 }
 
-.buttonsSlider {
+main .carouselContainer .buttonsSlider {
   position: absolute;
   top: 45%;
-  left: 0%;
+  
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.prevButton,
-.nextButton {
+main .carouselContainer .buttonsSlider .prevButton,
+main .carouselContainer .buttonsSlider .nextButton {
   margin: 0;
   padding: 0;
-  cursor: pointer;
+  
   background: transparent;
   font-size: 35px;
   border: none;
+
+  cursor: pointer;
 }
 
-.prevButton:focus,
-.nextButton:focus {
+main .carouselContainer .buttonsSlider .prevButton:focus,
+main .carouselContainer .buttonsSlider .nextButton:focus {
   outline: none;
 }
 
-.prevButton:hover,
-.nextButton:hover {
+main .carouselContainer .buttonsSlider .prevButton:hover,
+main .carouselContainer .buttonsSlider .nextButton:hover {
   transform: scale(1.1);
 }
 
 @media (max-width: 1100px) {
-  .description p {
+  main .carouselContainer .carouselSlider .slidesImg .description p {
     font-size: 1em;
   }
 }
 
 @media (max-width: 900px) {
-  .description p {
-    font-size: 0.8em;
-  }
 
-  .slidesImg img {
+  main .carouselContainer .carouselSlider .slidesImg img {
     height: 70%;
   }
 
-  .description {
+  main .carouselContainer .carouselSlider .slidesImg .description {
     height: 30%;
   }
 
-  .buttonLinkDesc {
+  main .carouselContainer .carouselSlider .slidesImg .description p {
+    font-size: 0.8em;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description div a .buttonLinkDesc {
     width: 60px;
     height: 35px;
     font-size: 1em;
   }
 
-  .buttonsSlider {
+  main .carouselContainer .buttonsSlider {
     top: 35%;
   }
 
-  .prevButton,
-  .nextButton {
+  main .carouselContainer .buttonsSlider .prevButton,
+  main .carouselContainer .buttonsSlider .nextButton {
     font-size: 25px;
   }
 }
 
 @media (max-width: 700px) {
-  .carouselContainer {
+  main .carouselContainer {
     width: calc((100vw / 1.1));
     height: calc(100vw / 1.3);
   }
 
-  .slidesImg img {
+  main .carouselContainer .carouselSlider .slidesImg img {
     width: calc(100vw / 1.1 - 10px);
   }
 
-  .carouselTitle {
+  main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+    font-size: 0.8em;
+  }
+
+  main .carouselTitle {
     font-size: 1em;
     padding: 10px;
     width: 95%;
   }
-
-  .buttonLinkDesc {
-    font-size: 0.8em;
-  }
 }
 
 @media (max-width: 420px) {
-  .text {
+  main.aboutContainer .textContainer .text {
     font-size: 1em;
+  }
+
+  main.aboutContainer .textContainer {
+    padding: 25px 0 30px 0;
   }
 
   .lightGray {
     display: none;
-  }
-
-  .textContainer {
-    padding: 25px 0 30px 0;
   }
 }
