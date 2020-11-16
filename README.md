@@ -49,7 +49,7 @@ This project was made with the following technologies:
 ```sh
   # Run ./index.html file
   # Or you can access it on the following address:
-  https://cancellier27.github.io/founders-website/
+  https://cancellier27.github.io/web-app-fc/
 
 ```
 
