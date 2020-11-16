@@ -41,7 +41,7 @@ This project was made with the following technologies:
 1. Clone the repo :
 
 ```sh
-  $ git clone https://github.com/Cancellier27/founders-website
+  $ git clone https://github.com/Cancellier27/web-app-fc
 ```
 
 2. Execute the app:
