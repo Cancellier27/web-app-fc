@@ -1,8 +1,3 @@
-* {
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
-}
-
 :root {
   --headerHeight: 100px;
   --headerHeightMobile: 68px;
@@ -25,7 +20,7 @@
   --lightGrayActiveBackground: lightgray;
   --textActiveColor: black;
 
-  --generalTextColor: lightgray;
+  --generalTextColor: #fff;
   --brighterTextColor: white;
   --commentaryColor: #a0a0a0;
   --linksInTextColor: tomato;
@@ -36,14 +31,10 @@
 
 }
 
-.lagosta {
-  font-family: 'Lobster', cursive;
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
-
-.courgette {
-  font-family: 'Courgette', cursive;
-}
-
 
 body {
   background-image: url("./src/assets/backgroundAll.png");
@@ -52,6 +43,64 @@ body {
   width: 100%;
 }
 
+.lagosta {
+  font-family: 'Lobster', cursive;
+}
+
+.courgette {
+  font-family: 'Courgette', cursive;
+}
+
+/*  button css  */
+.button {
+  margin-top: 20px;
+  width: 170px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  color: var(--redColor);
+  border: solid 2px var(--redColor);
+  border-radius: 10px;
+}
+
+.blue {
+  color: var(--blueColor);
+  border: solid 2px var(--blueColor);
+  border-radius: 10px;
+}
+
+.lightGray {
+  color: var(--lightGrayColor);
+  border: solid 2px var(--lightGrayColor);
+  border-radius: 10px;
+}
+
+.red:hover,
+.blue:hover,
+.lightGray:hover {
+  font-weight: bold;
+}
+
+.red:active {
+  background-color: var(--redActiveBackground);
+  color: var(--textActiveColor)
+}
+
+.blue:active {
+  background-color: var(--blueActiveBackground);
+  color: var(--textActiveColor)
+}
+
+.lightGray:active {
+  background-color: var(--lightGrayActiveBackground);
+  color: var(--textActiveColor)
+}
 
 /*  Header CSS  */
 header {
@@ -203,57 +252,6 @@ main .homeNavBar h3 {
   margin: 0;
   padding: 0;
   font-size: 1.5em;
-}
-
-/*  button css  */
-.button {
-  margin-top: 20px;
-  width: 170px;
-  height: 60px;
-  text-decoration: none;
-  font-size: 1.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.red {
-  color: var(--redColor);
-  border: solid 2px var(--redColor);
-  border-radius: 10px;
-}
-
-.blue {
-  color: var(--blueColor);
-  border: solid 2px var(--blueColor);
-  border-radius: 10px;
-}
-
-.lightGray {
-  color: var(--lightGrayColor);
-  border: solid 2px var(--lightGrayColor);
-  border-radius: 10px;
-}
-
-.red:hover,
-.blue:hover,
-.lightGray:hover {
-  font-weight: bold;
-}
-
-.red:active {
-  background-color: var(--redActiveBackground);
-  color: var(--textActiveColor)
-}
-
-.blue:active {
-  background-color: var(--blueActiveBackground);
-  color: var(--textActiveColor)
-}
-
-.lightGray:active {
-  background-color: var(--lightGrayActiveBackground);
-  color: var(--textActiveColor)
 }
 
 @media (max-width: 1300px) {
