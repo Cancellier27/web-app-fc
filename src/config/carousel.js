@@ -1,83 +1,34 @@
-// File for creation of carousel animation
-const carouselContainer = document.querySelector(".carouselContainer")
-const carouselSlider = document.querySelector(".carouselSlider")
-const nextButton = document.querySelector(".nextButton")
-const prevButton = document.querySelector(".prevButton")
+const slidesImages = document.querySelectorAll('.slidesImg')
+const carouselContainer = document.querySelector('.carouselContainer')
 
-let imgSlide = document.querySelectorAll(".slidesImg")
-let counter = 1
-let slideInterval
+let timeInterval;
+const interval = 5000
 
-const firstCloneSlide = imgSlide[0].cloneNode(true)
-const lastCloneSlide = imgSlide[imgSlide.length - 1].cloneNode(true)
+function ImageSlider(orientation) {
+  const imgSelected = document.querySelector('.selected');
+  imgSelected.classList.remove('selected');
 
-firstCloneSlide.id = 'firstImg'
-lastCloneSlide.id = 'lastImg'
-carouselSlider.append(firstCloneSlide)
-carouselSlider.prepend(lastCloneSlide)
-
-const imgWidth = imgSlide[counter].clientWidth;
-
-carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
-
-const interval = 5000;
-
-const carouselLoop = () => {
-  slideInterval = setInterval(() => {
-    moveToNextImg()
-    console.log(imgWidth)
-  }, interval)
-}
-
-const getCarouselImgSlide = () => document.querySelectorAll(".slidesImg");
-
-carouselSlider.addEventListener('transitionend', () => {
-  slides = getCarouselImgSlide();
-  if (slides[counter].id === firstCloneSlide.id) {
-    carouselSlider.style.transition = 'none';
-    counter = 1;
-    carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`;
-  }
-
-  if (slides[counter].id === lastCloneSlide.id) {
-    carouselSlider.style.transition = 'none';
-    counter = slides.length - 2;
-    carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`;
-  }
-});
-
-const moveToNextImg = () => {
-  slides = getCarouselImgSlide();
-  if (counter >= slides.length - 1) return
-  counter++
-  carouselSlider.style.transition = `600ms ease-out`
-  carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
-}
-
-const moveToPrevImg = () => {
-  slides = getCarouselImgSlide();
-  if (counter <= 0) return
-  counter--
-  carouselSlider.style.transition = `600ms ease-out`
-  carouselSlider.style.transform = `translateX(${-imgWidth * counter}px)`
-}
-
-document.onkeydown = function (e) {
-  switch (e.keyCode) {
-    case 39:
-      moveToNextImg();
-      break;
-    case 37:
-      moveToPrevImg();
-      break;
+  if (orientation === 'next') {
+    if (imgSelected.nextElementSibling) {
+      imgSelected.nextElementSibling.classList.add('selected');
+    } else {
+      slidesImages[0].classList.add('selected');
+    }
+  } else {
+    if (imgSelected.previousElementSibling) {
+      imgSelected.previousElementSibling.classList.add('selected');
+    } else {
+      slidesImages[slidesImages.length - 1].classList.add('selected');
+    }
   }
 };
 
-nextButton.addEventListener('click', moveToNextImg);
-prevButton.addEventListener('click', moveToPrevImg);
+function carouselLoop() {
+  timeInterval = setInterval(() => ImageSlider('next'), interval)
+}
 
 carouselContainer.addEventListener('mouseenter', () => {
-  clearInterval(slideInterval);
+  clearInterval(timeInterval);
 });
 
 carouselContainer.addEventListener('mouseleave', carouselLoop);
