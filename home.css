@@ -13,7 +13,7 @@
   --footerBorderColor: lightgray;
 
   --mainBordersColor: white;
-  
+
   --carouselDescriptionColor: #222227;
   --carouselBordersColor: #19181d;
 
@@ -40,12 +40,10 @@
   font-family: 'Lobster', cursive;
 }
 
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.courgette {
+  font-family: 'Courgette', cursive;
 }
+
 
 body {
   background-image: url("./src/assets/backgroundAll.png");
@@ -67,7 +65,7 @@ header {
   border-bottom: solid 1px var(--headerBorderColor);
 }
 
-.myName {
+header h1 .myName {
   color: var(--brighterTextColor);
   margin: 0;
   padding: 0;
@@ -76,7 +74,7 @@ header {
   text-decoration: none;
 }
 
-.nav_bar {
+header .nav_bar {
   margin: 0;
   padding: 0;
   margin-right: 50px;
@@ -84,25 +82,19 @@ header {
   list-style-type: none;
 }
 
-.nav_bar li {
+header .nav_bar li {
   margin: 0;
   padding: 0;
   margin-left: 15px;
 }
 
-.nav_bar li a {
+header .nav_bar li a {
   padding: 5px 10px;
   text-decoration: none;
   font-size: 1.3em;
 }
 
-
 /*  Footer CSS  */
-h3 {
-  font-size: 1.3em;
-  color: var(--generalTextColor);
-}
-
 footer {
   margin: 0;
   padding: 0;
@@ -113,15 +105,19 @@ footer {
   border-top: solid 1px var(--footerBorderColor);
 }
 
+footer h3 {
+  font-size: 1.3em;
+  color: var(--generalTextColor);
+}
 
-.forDate {
+footer .forDate {
   color: var(--generalTextColor);
   padding-top: 20px;
   margin: 0;
   margin-left: 50px;
 }
 
-.gitContainer {
+footer .gitContainer {
   margin: 0;
   padding: 0;
   margin-right: 50px;
@@ -130,28 +126,28 @@ footer {
   align-items: center;
 }
 
-.createdSay p {
+footer .createdSay p {
   color: var(--generalTextColor);
 }
 
-.linksSocial {
+footer .gitContainer .linksSocial {
   margin: 0;
   padding: 0;
   margin-left: 30px;
 }
 
-.linksSocial i {
+footer .gitContainer .linksSocial i {
   color: var(--iconGeneralColor);
   margin: 0;
   padding: 0;
   transform: scale(3);
 }
 
-.linksSocial i:hover {
+footer .gitContainer .linksSocial i:hover {
   color: var(--iconHoverColor);
 }
 
-.linksSocial i:active {
+footer .gitContainer .linksSocial i:active {
   color: var(--iconActiveColor);
 }
 
@@ -164,7 +160,7 @@ main {
   display: flex;
 }
 
-.introduction {
+main .introduction {
   margin: 0;
   padding: 0;
   margin-left: 100px;
@@ -174,30 +170,7 @@ main {
   background: none;
 }
 
-.introduction p {
-  padding: 0;
-  margin: 0;
-}
-
-.about {
-  margin: 0;
-  padding: 0;
-  height: 300px;
-}
-
-.carousel {
-  margin: 0;
-  padding: 0;
-  height: 300px;
-}
-
-.text {
-  font-size: 1.3em;
-  padding: 10px;
-  margin: 10px;
-}
-
-.hello {
+main .introduction .hello {
   background: none;
   font-size: 10em;
   padding: 10px;
@@ -205,14 +178,20 @@ main {
   color: var(--generalTextColor);
 }
 
-.skills {
+main .introduction .skills {
   font-size: 1.4em;
   padding: 0px 10px 10px 10px;
   margin: 0px 10px 10px 10px;
   color: var(--commentaryColor);
 }
 
-.homeNavBar {
+main .textContainer .text {
+  font-size: 1.3em;
+  padding: 10px;
+  margin: 10px;
+}
+
+main .homeNavBar {
   margin-left: 50px;
   display: flex;
   flex-direction: column;
@@ -220,7 +199,7 @@ main {
   align-items: flex-start;
 }
 
-.homeNavBar h3 {
+main .homeNavBar h3 {
   margin: 0;
   padding: 0;
   font-size: 1.5em;
@@ -285,11 +264,10 @@ main {
 
   main {
     flex-direction: column;
-    /* align-items: center; */
     justify-content: flex-start;
   }
 
-  .homeNavBar {
+  main .homeNavBar {
     margin-left: 100px;
     margin-bottom: 50px;
     flex-direction: row;
@@ -297,7 +275,7 @@ main {
 
   }
 
-  .introduction {
+  main .introduction {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 100px;
@@ -307,20 +285,20 @@ main {
 }
 
 @media (max-width: 990px) {
-  .hello {
+  main .introduction .hello {
     font-size: 6em;
   }
 }
 
 @media (max-width: 690px) {
-  .homeNavBar {
+  main .homeNavBar {
     margin-left: 20px;
     margin-bottom: 30px;
     flex-direction: row;
     justify-content: flex-start;
   }
 
-  .introduction {
+  main .introduction {
     margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -329,25 +307,35 @@ main {
     height: auto;
   }
 
-  .gitContainer,
-  .forDate {
-    display: none;
-  }
-
-  .footer {
+  footer {
     align-items: center;
     justify-content: center;
   }
+
+  footer .gitContainer,
+  footer .forDate {
+    display: none;
+  }
+
 }
 
 @media (max-width: 550px) {
-  .hello {
+  main {
+    justify-content: space-between;
+  }
+
+  main .introduction .hello {
     font-size: 3.5em;
   }
 
-  .skills {
+  main .introduction .skills {
     margin-top: 20px;
     font-size: 1em;
+  }
+
+  main .introduction {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .button {
@@ -357,20 +345,9 @@ main {
     text-decoration: none;
     font-size: 1.1em;
   }
-
-  .introduction {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  main {
-    justify-content: space-between;
-  }
 }
 
 @media (max-width: 480px) {
-
-
   footer {
     height: var(--footerHeightMobile);
   }
@@ -381,6 +358,5 @@ main {
 
   main {
     min-height: calc(100vh - var(--footerHeightMobile) - var(--headerHeightMobile));
-
   }
 }
