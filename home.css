@@ -1,13 +1,13 @@
 :root {
   --headerHeight: 100px;
   --headerHeightMobile: 68px;
-  --headerBorderColor: lightgray;
+  --headerBorderColor: #fff;
 
   --footerHeight: 150px;
   --footerHeightMobile: 50px;
-  --footerBorderColor: lightgray;
+  --footerBorderColor: #fff;
 
-  --mainBordersColor: white;
+  --mainBordersColor: #fff;
 
   --carouselDescriptionColor: #222227;
   --carouselBordersColor: #19181d;
@@ -19,15 +19,16 @@
   --lightGrayColor: lightgray;
   --lightGrayActiveBackground: lightgray;
   --textActiveColor: black;
+  --normalActiveBackground: #9c9c9c;
 
   --generalTextColor: #fff;
-  --brighterTextColor: white;
+  --brighterTextColor: #fff;
   --commentaryColor: #a0a0a0;
   --linksInTextColor: tomato;
 
-  --iconGeneralColor: lightgray;
-  --iconHoverColor: white;
-  --iconActiveColor: lightgray;
+  --iconGeneralColor: #fff;
+  --iconHoverColor: lightgray;
+  --iconActiveColor: #fff;
 
 }
 
@@ -63,6 +64,11 @@ body {
   justify-content: center;
 }
 
+.normal {
+  color: var(--generalTextColor);
+  border-radius: 10px;
+}
+
 .red {
   color: var(--redColor);
   border: solid 2px var(--redColor);
@@ -83,8 +89,14 @@ body {
 
 .red:hover,
 .blue:hover,
-.lightGray:hover {
+.lightGray:hover,
+.normal:hover {
   font-weight: bold;
+}
+
+.normal:active {
+  background-color: var(--normalActiveBackground);
+  color: var(--textActiveColor)
 }
 
 .red:active {
@@ -117,10 +129,12 @@ header {
 header h1 .myName {
   color: var(--brighterTextColor);
   margin: 0;
+  margin-left: 50px;
   padding: 0;
   font-size: 1.5em;
-  margin-left: 50px;
+  font-weight: 500;
   text-decoration: none;
+
 }
 
 header .nav_bar {
@@ -140,7 +154,7 @@ header .nav_bar li {
 header .nav_bar li a {
   padding: 5px 10px;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 /*  Footer CSS  */
