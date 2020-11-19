@@ -12,8 +12,8 @@
   --carouselDescriptionColor: #222227;
   --carouselBordersColor: #19181d;
 
-  --redColor: red;
-  --redActiveBackground: red;
+  --redColor: #ef0d33;
+  --redActiveBackground: #ef0d33;
   --blueColor: cyan;
   --blueActiveBackground: cyan;
   --lightGrayColor: lightgray;
@@ -29,8 +29,13 @@
   --iconGeneralColor: #fff;
   --iconHoverColor: lightgray;
   --iconActiveColor: #fff;
-
 }
+
+.teste {
+  width: 100vw;
+  height: 800px;
+}
+
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -39,7 +44,12 @@
 }
 
 body {
-  background-image: url("./src/assets/backgroundAll.png");
+  /* background: url("./src/assets/backgroundAll.png");
+  background: url("./src/assets/backgroundAll.png");
+  background: url("./src/assets/02.png"); */
+  background-color: #111517;
+  background-size: auto;
+  background-repeat: repeat;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -125,6 +135,7 @@ header {
   height: var(--headerHeight);
   width: 100%;
   border-bottom: solid 1px var(--headerBorderColor);
+  background-color: #1b2a2f;
 }
 
 header h1 .myName {
