@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="./src/components/about/about.css">
   <link rel="stylesheet" href="./src/components/links/links.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/1693a68714.js" crossorigin="anonymous"></script>
-  
+
   <title>Founders Webpage</title>
 </head>
 
@@ -27,14 +27,24 @@
 
     <ul class="nav_bar">
       <li class="HomeLink">
-        <a href="#aboutMe" class="normal">About</a>
+        <a href="#aboutMe" class="redLinks">About</a>
       </li>
       <li>
-        <a href="#contactMe" class="normal">Contact</a>
+        <a href="#contactMe" class="redLinks">Contact</a>
       </li>
     </ul>
 
-    <Button onclick="changeColor()">light</Button>
+    <!-- <input type="checkbox" onclick="changeColor()">light</input> -->
+    <div class="nightModeBtn">
+      <i class="fas fa-moon"></i>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <i class="fas fa-sun"></i>
+    </div>
+
+
   </header>
 
   <main class="aboutContainer mainLink">
