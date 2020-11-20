@@ -123,7 +123,7 @@ body {
 
 
 
-/*  Header CSS  */
+/*  Header  */
 header {
   position: fixed;
   top: 0;
@@ -139,30 +139,25 @@ header {
   z-index: 10;
 }
 
-header h1 .myName {
-  margin: 0 50px 0 40px;
-  
-  color: var(--textColorRed);
 
-  font-size: 1.5em;
+header .myName {
+  margin-right: 2%;
+  margin-left: 3%;
+
+  color: var(--textColorRed);
+  
+  font-size: 3em;
   font-weight: 500;
   text-decoration: none;
 }
 
 header .nav_bar {
-  margin-right: 150px;
   display: flex;
   list-style-type: none;
 }
 
-header .nav_bar li {
-  margin: 0;
-  padding: 0;
-  margin-left: 15px;
-}
-
 header .nav_bar li a {
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   text-decoration: none;
   font-size: 1.5em;
 }
