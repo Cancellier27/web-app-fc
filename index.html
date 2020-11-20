@@ -11,14 +11,18 @@
   <link rel="stylesheet" href="./home.css">
   <link rel="stylesheet" href="./src/components/about/about.css">
   <link rel="stylesheet" href="./src/components/links/links.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/1693a68714.js" crossorigin="anonymous"></script>
+  
   <title>Founders Webpage</title>
 </head>
 
 <body>
   <header>
     <h1>
-      <a href="./index.html" class="lagosta myName">Filipe</a>
+      <a href="#home" class="myName bebas">FCC</a>
     </h1>
 
     <ul class="nav_bar">
@@ -34,9 +38,9 @@
   </header>
 
   <main class="aboutContainer mainLink">
-    <div class='teste'>
+    <div id='home' class="blues container">
       <div class="introduction">
-        <h1 class="hello lagosta">
+        <h1 class="hello bebas">
           Hello, <br /> I am Filipe
         </h1>
         <h3 class="skills"> Civil Engineer and Front-End Developer (in training)</h3>
@@ -48,7 +52,7 @@
       </div>
     </div>
 
-    <div id='aboutMe' class="textContainer">
+    <div id='aboutMe' class="container textContainer white">
       <p class="text">
         <span class="first-letter">H</span>ello, my name is <strong>Filipe Cancellier da Costa</strong>. <br /><br />
 
@@ -83,99 +87,102 @@
       </p>
     </div>
 
-    <h3 class="carouselTitle lagosta">Here are some examples of projects that I have made so far:</h3>
+    <div id="container" class="blues">
 
-    <div class="carouselContainer">
-      <div class="carouselSlider">
-        <div class="slidesImg selected">
-          <img src="./src/assets/carouselImg/EcoletaSite.PNG" alt="EcoletaSite">
-          <div class="description">
-            <p>
-              An app for gathering of disposable materials made in React and using Typescript.
-            </p>
-            <div>
-              <a href="https://github.com/Cancellier27/NextLevelWeek" class="buttonLinkDesc red">Repo</a>
+      <h3 class="carouselTitle lagosta">Here are some examples of projects that I have made so far:</h3>
+
+      <div class="carouselContainer">
+        <div class="carouselSlider">
+          <div class="slidesImg selected">
+            <img src="./src/assets/carouselImg/EcoletaSite.PNG" alt="EcoletaSite">
+            <div class="description">
+              <p>
+                An app for gathering of disposable materials made in React and using Typescript.
+              </p>
+              <div>
+                <a href="https://github.com/Cancellier27/NextLevelWeek" class="buttonLinkDesc red">Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="slidesImg">
+            <img src="./src/assets/carouselImg/fiflix.png" alt="fiflix">
+            <div class="description">
+              <p>
+                An App cloning Netflix interface, but for videos of my own preference.
+                Made with React
+              </p>
+              <div>
+                <a href="https://github.com/Cancellier27/React-Immersion" class="buttonLinkDesc red">Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="slidesImg">
+            <img src="./src/assets/carouselImg/Forca.PNG" alt="Forca">
+            <div class="description">
+              <p>
+                One of my firsts app. A simple game called "Joga Da Forca" (brazilian name), where
+                you should guess wish is the correct word before yours changes ends. Made with vanilla JS
+              </p>
+              <div>
+                <a href="https://github.com/Cancellier27/Jogo-Forca" class="buttonLinkDesc red">Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="slidesImg">
+            <img src="./src/assets/carouselImg/githubApp.PNG" alt="githubApp">
+            <div class="description">
+              <p>
+                An search app using the GitHub api, where you can find the users and theirs repos.
+                Made with React
+              </p>
+              <div>
+                <a href="https://github.com/Cancellier27/github-search-app" class="buttonLinkDesc red">Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="slidesImg">
+            <img src="./src/assets/carouselImg/jogoDaVelha.PNG" alt="jogoDaVelha">
+            <div class="description">
+              <p>
+                My firs app. Hash game made with vanilla JS
+              </p>
+              <div>
+                <a href="https://github.com/Cancellier27/HashGame" class="buttonLinkDesc red">Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="slidesImg">
+            <img src="./src/assets/carouselImg/PersonalSite.png" alt="PersonalSite">
+            <div class="description">
+              <p>
+                An idea of site create with the purpose to be a portfolio.
+                Made with React
+              </p>
+              <div>
+                <a href="https://github.com/Cancellier27/FilipeSite" class="buttonLinkDesc red">Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="slidesImg">
+            <img src="./src/assets/carouselImg/timerReact.PNG" alt="timerReact">
+            <div class="description">
+              <p>
+                An timer made with React to train my logic skills.
+              </p>
+              <div>
+                <a href="https://github.com/Cancellier27/Timer-React" class="buttonLinkDesc red">Repo</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="slidesImg">
-          <img src="./src/assets/carouselImg/fiflix.png" alt="fiflix">
-          <div class="description">
-            <p>
-              An App cloning Netflix interface, but for videos of my own preference.
-              Made with React
-            </p>
-            <div>
-              <a href="https://github.com/Cancellier27/React-Immersion" class="buttonLinkDesc red">Repo</a>
-            </div>
-          </div>
+        <div class="buttonsSlider">
+          <button class="prevButton" onclick="ImageSlider()">
+            <i class="fas fa-chevron-circle-left"></i>
+          </button>
+          <button class="nextButton" onclick="ImageSlider('next')">
+            <i class="fas fa-chevron-circle-right"></i>
+          </button>
         </div>
-        <div class="slidesImg">
-          <img src="./src/assets/carouselImg/Forca.PNG" alt="Forca">
-          <div class="description">
-            <p>
-              One of my firsts app. A simple game called "Joga Da Forca" (brazilian name), where
-              you should guess wish is the correct word before yours changes ends. Made with vanilla JS
-            </p>
-            <div>
-              <a href="https://github.com/Cancellier27/Jogo-Forca" class="buttonLinkDesc red">Repo</a>
-            </div>
-          </div>
-        </div>
-        <div class="slidesImg">
-          <img src="./src/assets/carouselImg/githubApp.PNG" alt="githubApp">
-          <div class="description">
-            <p>
-              An search app using the GitHub api, where you can find the users and theirs repos.
-              Made with React
-            </p>
-            <div>
-              <a href="https://github.com/Cancellier27/github-search-app" class="buttonLinkDesc red">Repo</a>
-            </div>
-          </div>
-        </div>
-        <div class="slidesImg">
-          <img src="./src/assets/carouselImg/jogoDaVelha.PNG" alt="jogoDaVelha">
-          <div class="description">
-            <p>
-              My firs app. Hash game made with vanilla JS
-            </p>
-            <div>
-              <a href="https://github.com/Cancellier27/HashGame" class="buttonLinkDesc red">Repo</a>
-            </div>
-          </div>
-        </div>
-        <div class="slidesImg">
-          <img src="./src/assets/carouselImg/PersonalSite.png" alt="PersonalSite">
-          <div class="description">
-            <p>
-              An idea of site create with the purpose to be a portfolio.
-              Made with React
-            </p>
-            <div>
-              <a href="https://github.com/Cancellier27/FilipeSite" class="buttonLinkDesc red">Repo</a>
-            </div>
-          </div>
-        </div>
-        <div class="slidesImg">
-          <img src="./src/assets/carouselImg/timerReact.PNG" alt="timerReact">
-          <div class="description">
-            <p>
-              An timer made with React to train my logic skills.
-            </p>
-            <div>
-              <a href="https://github.com/Cancellier27/Timer-React" class="buttonLinkDesc red">Repo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="buttonsSlider">
-        <button class="prevButton" onclick="ImageSlider()">
-          <i class="fas fa-chevron-circle-left"></i>
-        </button>
-        <button class="nextButton" onclick="ImageSlider('next')">
-          <i class="fas fa-chevron-circle-right"></i>
-        </button>
       </div>
     </div>
 
