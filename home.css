@@ -139,7 +139,6 @@ header {
   z-index: 10;
 }
 
-
 header .myName {
   margin-right: 2%;
   margin-left: 3%;
@@ -157,7 +156,7 @@ header .nav_bar {
 }
 
 header .nav_bar li a {
-  /* padding: 5px 10px; */
+  padding: 0 10px;
   text-decoration: none;
   font-size: 1.5em;
 }
@@ -193,10 +192,12 @@ header .nav_bar li a {
 .slider {
   position: absolute;
   cursor: pointer;
+
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+
   background-color: #ccc;
   transition: .4s;
 }
@@ -206,18 +207,16 @@ header .nav_bar li a {
   content: "";
   height: 80%;
   width: 40%;
+
   left: 5px;
   top: 2.2px;
+
   background-color: white;
   transition: .4s;
 }
 
 input:checked + .slider {
   background-color: var(--textColorRed);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--textColorRed);
 }
 
 input:checked + .slider:before {
