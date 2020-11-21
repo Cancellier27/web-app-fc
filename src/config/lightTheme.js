@@ -1,11 +1,10 @@
-let watch = 'black'
-
 function changeColor() {
-  if (watch === 'black') {
-    document.body.style.backgroundImage = 'url("./src/assets/backgroundWhite.png")'
-    watch = 'white'
+  const checkbox = document.getElementById('ThemeCheckbox')
+  const stylePath = document.getElementById('styleTag')
+
+  if (checkbox.checked)  {
+    stylePath.href = "./src/style/styleLight.css"
   } else {
-    document.body.style.backgroundImage = 'url("./src/assets/backgroundAll.png")'
-    watch = 'black'
+    stylePath.href = "./src/style/style.css"
   }
 }

@@ -8,10 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./src/style/home.css">
-  <link rel="stylesheet" href="./src/style/about.css">
-  <link rel="stylesheet" href="./src/style/footer.css">
-  <link rel="stylesheet" href="./src/style/header.css">
+  <link id="styleTag" rel="stylesheet" href="./src/style/style.css" >
 
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <script src="https://kit.fontawesome.com/1693a68714.js" crossorigin="anonymous"></script>
@@ -45,7 +42,7 @@
     <div class="nightModeBtn">
       <i class="fas fa-moon"></i>
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" id="ThemeCheckbox" onclick="changeColor()">
         <span class="slider round"></span>
       </label>
       <i class="fas fa-sun"></i>

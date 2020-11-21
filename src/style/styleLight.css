@@ -1,0 +1,781 @@
+:root {
+  --headerHeight: 80px;
+  --headerHeightMobile: 68px;
+  --headerBackgroundColor: rgba(201, 201, 201, 0.7);
+
+  --textColorRed: #ef0d33;
+  --activateColor: #911919;
+
+  --textColorStandard: #000;
+  --textColorDark: #000;
+  --textColorSmoked: #000;
+
+  --footerHeight: 150px;
+  --footerHeightMobile: 50px;
+  --footerBackgroundColor: rgb(167, 167, 167);
+
+  --btnBackground: #2e2e2e;
+  --btnHoverBackground: #ef0d33;
+  --btnActiveBackground: #911919;
+
+  --linksInTextColor: #ef0d33;
+
+
+
+  --carouselDescriptionColor: #ffffff;
+  --carouselBordersColor: #dfdfdf;
+}
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111517;
+  width: 100%;
+}
+
+/* standards */
+.container {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.selected {
+  opacity: 1 !important;
+  z-index: 5 !important;
+}
+
+.blues {
+  background-color: rgb(27, 27, 71);
+}
+
+.white {
+  background-color: rgb(46, 39, 39);
+}
+
+.lagosta {
+  font-family: 'Lobster', cursive;
+}
+
+.bebas {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.btn {
+  overflow: hidden;
+  height: 60px;
+  padding: 0 40px;
+  max-width: 220px;
+
+  text-decoration: none;
+  color: var(--btnHoverBackground);
+
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--btnBackground);
+  border-radius: 3px;
+
+  box-shadow: inset 0 0 0 0 var(--btnBackground);
+  transition: ease-out 0.3s;
+}
+
+.btn:hover {
+  box-shadow: inset 300px 0 0 0 var(--btnHoverBackground);
+  color: var(--textColorStandard);
+}
+
+.btn:active {
+  transition: ease-out 0s;
+  box-shadow: inset 300px 0 0 0 var(--btnActiveBackground);
+  color: var(--textColorStandard);
+}
+
+/* Color themes */
+
+.redText {
+  color: var(--textColorRed);
+}
+
+.redLinks {
+  color: var(--textColorStandard);
+  transition: color 0.4s;
+}
+
+.redLinks:hover {
+  color: var(--textColorRed) !important;
+  font-weight: bold !important;
+  cursor: pointer;
+}
+
+.redLinks:active {
+  color: var(--activateColor);
+  transition: color 0.1s;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+
+  height: var(--headerHeight);
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: var(--headerBackgroundColor);
+
+  z-index: 10;
+}
+
+header .myName {
+  margin-right: 2%;
+  margin-left: 3%;
+
+  color: var(--textColorRed);
+
+  font-size: 3em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header .nav_bar {
+  display: flex;
+  list-style-type: none;
+}
+
+header .nav_bar li a {
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.nightModeBtn {
+  position: fixed;
+  top: calc(var(--headerHeight) / 2 - 10);
+  right: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--textColorStandard);
+}
+
+.switch {
+  margin: 0 5px;
+
+  position: relative;
+  display: inline-block;
+
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 40%;
+
+  left: 5px;
+  top: 2.2px;
+
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: var(--textColorRed);
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+footer {
+  width: 100%;
+  height: calc(100vh / 2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  color: var(--generalTextColor);
+  background-color: var(--footerBackgroundColor);
+}
+
+footer .createdAndDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .createdAndDate .forDate {
+  margin-bottom: 10px;
+}
+
+footer .linksResume {
+  margin-top: 2%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .linksResume h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+footer .linksContainer {
+  width: 600px;
+  height: calc(100vh / 5);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+footer .linksContainer .LinkDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 130px;
+}
+
+footer .linksContainer .LinkDiv .LINKS {
+  color: var(--iconGeneralColor);
+  font-size: 5em;
+}
+
+footer .linksContainer .LinkDiv .LINKS:hover {
+  color: var(--iconHoverColor);
+}
+
+footer .linksContainer .LinkDiv a {
+  text-decoration: none;
+}
+
+footer .linksContainer .LinkDiv p {
+  font-size: 1.4em;
+}
+
+@media (max-width: 700px) {
+  footer .linksContainer {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .linksContainer {
+    width: 300px;
+    margin-bottom: 60px;
+  }
+
+  footer .linksContainer .LinkDiv {
+    height: 75px;
+  }
+
+  footer .linksContainer .LinkDiv p {
+    font-size: 0.8em;
+  }
+
+  footer .linksContainer .LinkDiv .LINKS {
+    font-size: 3em;
+  }
+
+  footer .linksResume {
+    font-size: 1.2em;
+  }
+}
+
+
+main #projects {
+  background: rgb(34, 34, 34);
+  background: linear-gradient(180deg, rgb(194, 194, 194) 0%, rgb(214, 233, 255)100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main #projects h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-top: 110px;
+}
+
+main .carouselContainer {
+  position: relative;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  width: 100vw;
+  height: 650px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .carouselContainer .carouselSlider {
+  position: relative;
+
+  height: 100%;
+  width: 1000px;
+}
+
+main .carouselContainer .carouselSlider .slidesImg {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+main .carouselContainer .carouselSlider .slidesImg img {
+  height: 90%;
+  width: 100%;
+  max-width: 100%;
+
+  border: solid 2px var(--carouselBordersColor);
+  border-radius: 5px;
+
+  object-fit: cover;
+  object-position: left;
+}
+
+main .carouselContainer .carouselSlider .slidesImg .description {
+  margin-top: 1px;
+
+  height: 10%;
+  width: 100%;
+
+  background: var(--carouselDescriptionColor);
+
+  border: solid var(--carouselBordersColor) 2px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+main .carouselContainer .carouselSlider .slidesImg .description div {
+  height: 100%;
+  margin: 0 2%;
+
+  min-width: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+  height: 70%;
+  padding: 0 15px 0 15px;
+
+  font-size: 1.2em;
+}
+
+main .carouselContainer .carouselSlider .slidesImg .description p {
+  font-size: 1.3em;
+  color: var(--textColorStandard);
+  margin-left: 2%;
+}
+
+main .carouselContainer .buttonsSlider {
+  position: absolute;
+  top: 45%;
+
+  width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .carouselContainer .buttonsSlider .prevButton,
+main .carouselContainer .buttonsSlider .nextButton {
+  background: transparent;
+  font-size: 45px;
+  border: none;
+
+  cursor: pointer;
+}
+
+main .carouselContainer .buttonsSlider .prevButton:focus,
+main .carouselContainer .buttonsSlider .nextButton:focus {
+  outline: none;
+}
+
+main #projects p {
+  color: var(--textColorStandard);
+  font-size: 1.2em;
+  margin: 0 30px 0 30px;
+}
+
+
+/* Main CSS  */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #home {
+  background-image: url('../assets/backgrounds/backgroundWhite.png');
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 10% 0;
+  width: 100%;
+}
+
+
+main #home .introduction {
+  width: 90%;
+}
+
+main .introduction .hello {
+  background: none;
+  font-size: 10rem;
+  color: var(--textColorStandard);
+}
+
+main #home .separator {
+  height: 5px;
+  width: 80px;
+
+  margin: 0 0 20px 0;
+
+  background-color: var(--textColorRed);
+}
+
+main #home .introduction .skills {
+  font-size: 1.4em;
+  margin: 10px 0 0 0;
+  color: var(--textColorSmoked);
+}
+
+main #home .btnContainer {
+  width: 90%;
+}
+
+main #home .btnContainer .homeNavBar {
+  margin-top: 40px;
+}
+
+main #aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(34, 34, 34);
+  background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(171, 174, 190) 100%);
+}
+
+main #aboutMe h1 {
+  font-weight: normal;
+  font-size: 3em;
+  margin-top: 150px;
+
+}
+
+main #aboutMe .text {
+  font-size: 1.3em;
+  font-weight: normal;
+  color: var(--generalTextColor);
+  margin: 0 2% 5% 5%;
+
+}
+
+main #aboutMe .text .first-letter {
+  color: var(--textColorRed);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4em;
+}
+
+
+main #aboutMe .myself {
+  width: 20%;
+  min-width: 200px;
+  margin: 3% 0 0 3%;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px 5px #555555;
+  float: right;
+}
+
+.toggleMenu {
+  display: none;
+  color: var(--textColorRed);
+  transform: scale(2.5);
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .linksResume {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 350px) {
+  footer .linksContainer {
+    width: 300px;
+  }
+
+  footer .linksContainer .LinkDiv p {
+    font-size: 0.8em;
+  }
+}
+
+
+
+@media (max-width: 690px) {
+  main #home {
+    padding: 40% 0;
+  }
+
+  footer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .gitContainer,
+  footer .forDate {
+    display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
+  main .introduction .hello {
+    font-size: 6rem;
+  }
+
+  .toggleMenu {
+    display: block;
+  }
+
+  .myName {
+    display: none;
+  }
+
+  header nav {
+    position: relative;
+  }
+
+  .nav_bar {
+    position: absolute;
+    top: 40px;
+    /* left: -55px; */
+    left: -255px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 150px;
+
+    background-color: var(--headerBackgroundColor);
+    border-bottom-right-radius: 8px;
+    transition: all 0.3s ease-in-out;
+
+  }
+}
+
+
+@media (max-width: 550px) {
+  main .introduction .skills {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  main .introduction {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    height: var(--footerHeightMobile);
+  }
+
+  header {
+    height: var(--headerHeightMobile);
+  }
+
+  main {
+    min-height: calc(100vh - var(--footerHeightMobile) - var(--headerHeightMobile));
+  }
+}
+
+
+@media (max-width: 1250px) {
+  main .carouselContainer {
+    height: 450px;
+  }
+
+  main .carouselContainer .carouselSlider {
+    width: 700px;
+  }
+
+  main .carouselContainer .buttonsSlider {
+    width: 900px;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description p {
+    font-size: 1em !important;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+    font-size: 1em;
+  }
+}
+
+
+@media (max-width: 940px) {
+
+  main .carouselContainer {
+    height: 350px;
+  }
+
+  main .carouselContainer .carouselSlider {
+    width: 500px;
+  }
+
+  main .carouselContainer .buttonsSlider {
+    width: 600px;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description {
+    height: 15%;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg img {
+    height: 85%;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description p {
+    font-size: 0.8em !important;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+    font-size: 0.8em;
+  }
+
+  main .carouselContainer .buttonsSlider .prevButton,
+  main .carouselContainer .buttonsSlider .nextButton {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 620px) {
+  main .carouselContainer {
+    height: 350px;
+    width: 100vw;
+  }
+
+  main .carouselContainer .carouselSlider {
+    width: 75%;
+  }
+
+  main .carouselContainer .buttonsSlider {
+    width: 90%;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg img {
+    object-position: top;
+  }
+
+  main .carouselTitle {
+    font-size: 1em;
+    padding: 10px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 420px) {
+  main .textContainer .text {
+    font-size: 1em;
+  }
+
+  main .textContainer {
+    padding: 25px 0 30px 0;
+  }
+
+  .lightGray {
+    display: none;
+  }
+}
