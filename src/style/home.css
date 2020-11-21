@@ -5,12 +5,19 @@
 
   --textColorRed: #ef0d33;
   --activateColor: #911919;
+
   --textColorStandard: #fff1f1;
+  --textColorDark: #000;
   --textColorSmoked: #d8d8d8;
 
   --footerHeight: 150px;
   --footerHeightMobile: 50px;
   --footerBackgroundColor: black;
+
+  --btnBackground: #ffffff;
+  --btnHoverBackground: #ef0d33;
+  --btnActiveBackground: #911919;
+
 
 
   --carouselDescriptionColor: #222227;
@@ -35,9 +42,18 @@
   --iconActiveColor: #fff;
 }
 
-.teste {
-  width: 100vw;
-  height: 800px;
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111517;
+  width: 100%;
 }
 
 .container {
@@ -56,27 +72,7 @@
 }
 
 
-* {
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-body {
-  /* background: url("./src/assets/backgroundAll.png");
-  background: url("./src/assets/backgroundAll.png");
-  background: url("./src/assets/02.png"); */
-  background-color: #111517;
-  background-size: auto;
-  background-repeat: repeat;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
+/* fonts */
 
 .lagosta {
   font-family: 'Lobster', cursive;
@@ -86,17 +82,42 @@ body {
   font-family: 'Bebas Neue', cursive;
 }
 
-/*  button css  */
-.button {
-  margin-top: 20px;
-  width: 170px;
+/*  button  */
+.btn {
+  overflow: hidden;
   height: 60px;
+  padding: 0 40px;
+
   text-decoration: none;
-  font-size: 1.5em;
+  color: var(--btnHoverBackground);
+
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: var(--btnBackground);
+  border-radius: 3px;
+
+  box-shadow: inset 0 0 0 0 var(--btnBackground);
+  transition: ease-out 0.3s;
 }
+
+.btn:hover {
+  box-shadow: inset 300px 0 0 0 var(--btnHoverBackground);
+  color: var(--textColorStandard);
+}
+
+.btn:active {
+  transition: ease-out 0s;
+  box-shadow: inset 300px 0 0 0 var(--btnActiveBackground);
+  color: var(--textColorStandard);
+}
+
+/* Color themes */
 
 .redText {
   color: var(--textColorRed);
@@ -129,7 +150,7 @@ main {
 main #home {
   background-image: url('../assets/backgrounds/02.png');
 
-  
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -163,6 +184,7 @@ main .introduction .skills {
 }
 
 main .homeNavBar {
+  margin-top: 40px;
   margin-left: 150px;
 }
 
