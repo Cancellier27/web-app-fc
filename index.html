@@ -22,21 +22,25 @@
 <body>
   <header>
     <a href="#home" class="myName bebas">FCC</a>
-    <div class="toggleMenu"><i class="fas fa-bars"></i></div>
-    <ul class="nav_bar">
-      <li>
-        <a href="#home" class="redLinks">Home</a>
-      </li>
-      <li>
-        <a href="#aboutMe" class="redLinks">About</a>
-      </li>
-      <li>
-        <a href="#projects" class="redLinks">Projects</a>
-      </li>
-      <li>
-        <a href="#contactMe" class="redLinks">Contact</a>
-      </li>
-    </ul>
+    <div class="toggleMenu" onclick="onMenuToggle()"><i class="fas fa-bars"></i></div>
+    <nav>
+      <ul class="nav_bar">
+        <li>
+          <a href="#home" class="redLinks">Home</a>
+        </li>
+        <li>
+          <a href="#aboutMe" class="redLinks">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="redLinks">Projects</a>
+        </li>
+        <li>
+          <a href="#contactMe" class="redLinks">Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+
 
     <div class="nightModeBtn">
       <i class="fas fa-moon"></i>
@@ -292,6 +296,7 @@
   <script src='./src/config/footer.js'></script>
   <script src='./src/config/lightTheme.js'></script>
   <script src='./src/config/carousel.js'></script>
+  <script src='./src/config/toggle.js'></script>
 </body>
 
 </html>
