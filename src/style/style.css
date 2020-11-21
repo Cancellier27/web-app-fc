@@ -20,6 +20,8 @@
 
   --linksInTextColor: #ef0d33;
 
+  --iconGeneralColor: #fff ;
+  --iconHoverColor: #c7c7c7;
 
 
   --carouselDescriptionColor: #222227;
@@ -247,7 +249,7 @@ footer {
   justify-content: space-around;
   align-items: center;
 
-  color: var(--generalTextColor);
+  color: var(--textColorStandard);
   background-color: var(--footerBackgroundColor);
 }
 
@@ -343,7 +345,6 @@ footer .linksContainer .LinkDiv p {
 main #projects {
   background: rgb(34, 34, 34);
   background: linear-gradient(180deg, rgba(68, 71, 92, 1) 0%, rgb(24, 24, 24) 100%);
-  /* padding: 10% 0; */
 
   display: flex;
   flex-direction: column;
@@ -609,7 +610,7 @@ main #home .introduction {
 main .introduction .hello {
   background: none;
   font-size: 10rem;
-  color: var(--generalTextColor);
+  color: var(--textColorStandard);
 }
 
 main #home .separator {
@@ -654,7 +655,7 @@ main #aboutMe h1 {
 main #aboutMe .text {
   font-size: 1.3em;
   font-weight: normal;
-  color: var(--generalTextColor);
+  color: var(--textColorStandard);
   margin: 0 2% 5% 5%;
 
 }
