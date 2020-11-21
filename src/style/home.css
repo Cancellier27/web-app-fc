@@ -206,7 +206,7 @@ main #aboutMe {
   justify-content: space-between;
   align-items: center;
   background: rgb(34,34,34);
-  background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(68,71,92,1) 100%);
+  background: linear-gradient(90deg, rgb(27, 27, 27) 0%, rgb(40, 41, 48) 100%);
 }
 
 main #aboutMe h1 {
@@ -240,13 +240,14 @@ main #aboutMe .myself {
   float: right;
 }
 
-@media (max-width: 1300px) {
-
+.toggleMenu {
+  display: none;
+  color: var(--textColorRed);
+  transform: scale(2.5);
+  margin-left: 40px;
+  cursor: pointer;
 }
 
-@media (max-width: 990px) {
-
-}
 
 @media (max-width: 690px) {
   main #home {
@@ -268,6 +269,19 @@ main #aboutMe .myself {
 @media (max-width: 600px) {
   main .introduction .hello {
     font-size: 6rem;
+  }
+
+  .toggleMenu {
+    display: block;
+  }
+
+  .myName {
+    display: none;
+  }
+
+  .nav_bar li {
+    display: none;
+    
   }
 }
 

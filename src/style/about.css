@@ -1,6 +1,6 @@
 main #projects {
   background: rgb(34,34,34);
-/* background: linear-gradient(180deg, rgba(68,71,92,1) 0%, rgb(24, 24, 24) 100%); */
+background: linear-gradient(180deg, rgba(68,71,92,1) 0%, rgb(24, 24, 24) 100%);
   /* padding: 10% 0; */
     
   display: flex;
