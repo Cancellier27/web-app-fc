@@ -1,42 +1,38 @@
+main #projects {
+  background: rgb(34,34,34);
+/* background: linear-gradient(180deg, rgba(68,71,92,1) 0%, rgb(24, 24, 24) 100%); */
+  /* padding: 10% 0; */
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-main .carouselTitle {
-  margin: 50px 0 50px 0;
+main #projects h1 {
   font-size: 2em;
-  color: var(--generalTextColor);
-  font-weight: 500;
+  font-weight: normal;
 }
 
 main .carouselContainer {
   position: relative;
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 50px;
+
+  /* margin-top: 10px;
+  margin-bottom: 50px; */
   
-  width: 100%;
+  width: 100vw;
   height: 700px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* height: calc(100vw / 2.5);
-  width: calc((100vw / 1.5));
-  
-  border-left: solid 5px var(--carouselBordersColor);
-  border-right: solid 5px var(--carouselBordersColor); */
 }
 
 main .carouselContainer .carouselSlider {
   position: relative;
 
-  margin: 0;
-  padding: 0;
-
   height: 100%;
   width: 60%;
-
-  transform: translateX(0px);
 }
 
 main .carouselContainer .carouselSlider .slidesImg {
@@ -51,55 +47,56 @@ main .carouselContainer .carouselSlider .slidesImg {
   align-items: center;
 
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in-out;
 }
 
 main .carouselContainer .carouselSlider .slidesImg img {
-  height: 80%;
+  height: 90%;
   width: 100%;
 
   border: solid 2px var(--carouselBordersColor);
-  border-radius: 10px;
+  border-radius: 5px;
   
   object-fit: cover;
   object-position: top;
 }
 
 main .carouselContainer .carouselSlider .slidesImg .description {
-  margin: 0;
   margin-top: 1px;
-  padding: 15px;
 
-  height: 20%;
+  height: 10%;
   width: 100%;
   
   background: var(--carouselDescriptionColor);
-  color: var(--generalTextColor);
+  
   border: solid var(--carouselBordersColor) 2px;
-  border-radius: 10px;
+  border-radius: 5px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
-  width: 90px;
-  height: 50px;
-  padding: 0 15px 0 15px;
+main .carouselContainer .carouselSlider .slidesImg .description div {
+  height: 100%;
+  margin: 0 2%;
 
-  font-size: 1.2em;
-  text-decoration: none;
-  
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+  height: 70%;
+  padding: 0 15px 0 15px;
+
+  font-size: 1.2em;
+}
+
 main .carouselContainer .carouselSlider .slidesImg .description p {
-  max-width: 85%;
-  margin-right: 10px;
   font-size: 1.5em;
+  color: var(--textColorStandard);
 }
 
 main .carouselContainer .buttonsSlider {
@@ -115,9 +112,6 @@ main .carouselContainer .buttonsSlider {
 
 main .carouselContainer .buttonsSlider .prevButton,
 main .carouselContainer .buttonsSlider .nextButton {
-  margin: 0;
-  padding: 0;
-  
   background: transparent;
   font-size: 45px;
   border: none;
@@ -130,10 +124,6 @@ main .carouselContainer .buttonsSlider .nextButton:focus {
   outline: none;
 }
 
-main .carouselContainer .buttonsSlider .prevButton:hover,
-main .carouselContainer .buttonsSlider .nextButton:hover {
-  transform: scale(1.1);
-}
 
 @media (max-width: 1100px) {
   main .carouselContainer .carouselSlider .slidesImg .description p {

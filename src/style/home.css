@@ -68,6 +68,8 @@ body {
 
 .selected {
   opacity: 1 !important;
+  /* display: flex !important; */
+  /* transition: display 0.3s ease-in; */
 }
 
 .blues {
@@ -240,14 +242,14 @@ main #aboutMe .myself {
 }
 
 
+
+
 @media (max-width: 1300px) {
 
 }
 
 @media (max-width: 990px) {
-  /* main .introduction .hello {
-    font-size: 6em;
-  } */
+
 }
 
 @media (max-width: 690px) {
@@ -275,14 +277,6 @@ main #aboutMe .myself {
 
 
 @media (max-width: 550px) {
-  /* main {
-    justify-content: space-between;
-  } */
-
-  /* main .introduction .hello {
-    font-size: 3.5em;
-  } */
-
   main .introduction .skills {
     margin-top: 20px;
     font-size: 1em;
