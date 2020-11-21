@@ -49,6 +49,8 @@ footer  .linksContainer .LinkDiv {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  height: 130px;
 }
 
 footer  .linksContainer .LinkDiv .LINKS {
@@ -95,10 +97,6 @@ footer  .linksContainer .LinkDiv p {
   footer .linksResume {
     font-size: 1.2em;
   }
-/* 
-  header .nav_bar .HomeLink {
-    display: none;
-  } */
 }
 
 @media (max-width: 480px) {

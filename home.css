@@ -109,6 +109,7 @@ body {
 .redLinks:hover {
   color: var(--textColorRed) !important;
   font-weight: bold !important;
+  cursor: pointer;
 }
 
 .redLinks:active {
