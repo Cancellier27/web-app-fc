@@ -1,5 +1,4 @@
 const slidesImages = document.querySelectorAll('.slidesImg')
-const slidesDescriptions = document.querySelectorAll('.buttonLinkDesc')
 
 const carouselContainer = document.querySelector('.carouselSlider')
 
@@ -16,7 +15,6 @@ function ImageSlider(orientation) {
       imgSelected.nextElementSibling.classList.add('selected')
     } else {
       slidesImages[0].classList.add('selected')
-      slidesDescriptions[0].classList.add('selected')
     }
   } else {
     if (imgSelected.previousElementSibling) {

@@ -68,8 +68,7 @@ body {
 
 .selected {
   opacity: 1 !important;
-  /* display: flex !important; */
-  /* transition: display 0.3s ease-in; */
+  z-index: 5 !important;
 }
 
 .blues {
@@ -240,9 +239,6 @@ main #aboutMe .myself {
   box-shadow: -5px 5px 10px 5px #555555;
   float: right;
 }
-
-
-
 
 @media (max-width: 1300px) {
 
