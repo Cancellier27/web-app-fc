@@ -1,16 +1,16 @@
-main.mainLink {
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-main.mainLink .introductionLinks {
+footer .introductionLinks {
   width: 80%;
   margin-top: 70px;
 }
 
-main.mainLink .introductionLinks .linksResume {
+footer .introductionLinks .linksResume {
   background: none;
   font-size: 1.6em;
   font-weight: normal;
@@ -19,14 +19,14 @@ main.mainLink .introductionLinks .linksResume {
   color: whitesmoke;
 }
 
-main.mainLink  .homeNavBarLinks {
+footer  .homeNavBarLinks {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-main.mainLink  .homeNavBarLinks .linksContainer {
+footer  .homeNavBarLinks .linksContainer {
   margin: 0;
   padding: 0;
 
@@ -37,7 +37,7 @@ main.mainLink  .homeNavBarLinks .linksContainer {
   width: 600px;
 }
 
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv {
+footer  .homeNavBarLinks .linksContainer .LinkDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,29 +45,29 @@ main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv {
   height: 150px;
 }
 
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv .LINKS {
+footer  .homeNavBarLinks .linksContainer .LinkDiv .LINKS {
   padding: 0;
   margin: 0;
   color: var(--iconGeneralColor);
   font-size: 6em;
 }
 
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv a:hover,
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p:hover {
+footer  .homeNavBarLinks .linksContainer .LinkDiv a:hover,
+footer  .homeNavBarLinks .linksContainer .LinkDiv p:hover {
   color: var(--iconHoverColor);
   text-decoration: underline;
 }
 
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv a:active,
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p:active {
+footer  .homeNavBarLinks .linksContainer .LinkDiv a:active,
+footer  .homeNavBarLinks .linksContainer .LinkDiv p:active {
   color: var(--iconActiveColor);
 }
 
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv a {
+footer  .homeNavBarLinks .linksContainer .LinkDiv a {
   text-decoration: none;
 }
 
-main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
+footer  .homeNavBarLinks .linksContainer .LinkDiv p {
   margin: 0;
   padding: 0;
   color: var(--iconGeneralColor);
@@ -75,41 +75,41 @@ main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
 }
 
 @media (max-width: 700px) {
-  main.mainLink  .homeNavBarLinks.linksContainer {
+  footer  .homeNavBarLinks.linksContainer {
     width: 500px;
   }
 
-  main.mainLink .introductionLinks {
+  footer .introductionLinks {
     margin-left: 30px;
     margin-right: 30px;
   }
 }
 
 @media (max-width: 600px) {
-  main.mainLink  .homeNavBarLinks .linksContainer {
+  footer  .homeNavBarLinks .linksContainer {
     width: 300px;
     margin-bottom: 60px;
   }
 
-  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv {
+  footer  .homeNavBarLinks .linksContainer .LinkDiv {
     height: 75px;
   }
 
-  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
+  footer  .homeNavBarLinks .linksContainer .LinkDiv p {
     font-size: 0.8em;
   }
 
-  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv .LINKS {
+  footer  .homeNavBarLinks .linksContainer .LinkDiv .LINKS {
     font-size: 3em;
   }
 
-  main.mainLink .introductionLinks {
+  footer .introductionLinks {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 30px;
   }
 
-  main.mainLink .introductionLinks .linksResume {
+  footer .introductionLinks .linksResume {
     font-size: 1.2em;
   }
 
@@ -125,11 +125,11 @@ main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
 }
 
 @media (max-width: 350px) {
-  main.mainLink .introductionLinks .linksContainer {
+  footer .introductionLinks .linksContainer {
     width: 300px;
   }
 
-  main.mainLink  .homeNavBarLinks .linksContainer .LinkDiv p {
+  footer  .homeNavBarLinks .linksContainer .LinkDiv p {
     font-size: 0.8em;
   }
 }
