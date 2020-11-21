@@ -18,6 +18,8 @@
   --btnHoverBackground: #ef0d33;
   --btnActiveBackground: #911919;
 
+  --linksInTextColor: #ef0d33;
+
 
 
   --carouselDescriptionColor: #222227;
@@ -35,7 +37,7 @@
   --generalTextColor: #fff;
   --brighterTextColor: #fff;
   --commentaryColor: #a0a0a0;
-  --linksInTextColor: tomato;
+  
 
   --iconGeneralColor: #fff;
   --iconHoverColor: #cacaca;
@@ -56,11 +58,16 @@ body {
   width: 100%;
 }
 
+/* standards */
 .container {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   width: 100%;
+}
+
+.selected {
+  opacity: 1 !important;
 }
 
 .blues {
@@ -71,9 +78,6 @@ body {
   background-color: rgb(46, 39, 39);
 }
 
-
-/* fonts */
-
 .lagosta {
   font-family: 'Lobster', cursive;
 }
@@ -82,7 +86,6 @@ body {
   font-family: 'Bebas Neue', cursive;
 }
 
-/*  button  */
 .btn {
   overflow: hidden;
   height: 60px;
@@ -143,6 +146,7 @@ body {
 /* Main CSS  */
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -159,7 +163,7 @@ main #home {
 
 
 main #home .introduction {
-  margin: 150px 0 0 150px;
+  margin: 150px 0 0 250px;
 }
 
 main .introduction .hello {
@@ -177,26 +181,55 @@ main #home .separator {
   background-color: var(--textColorRed);
 }
 
-main .introduction .skills {
+main #home .introduction .skills {
   font-size: 1.4em;
   margin: 10px 0 0 0;
   color: var(--textColorSmoked);
 }
 
-main .homeNavBar {
+main #home .homeNavBar {
   margin-top: 40px;
-  margin-left: 150px;
+  margin-left: 250px;
 }
 
+main #aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-main .textContainer .text {
+main #aboutMe h1 {
+  font-weight: normal;
+  font-size: 3em;
+}
+
+main #aboutMe .text {
   font-size: 1.3em;
-  padding: 10px;
-  margin: 10px;
+  font-weight: normal;
+  color: var(--generalTextColor);
+  margin: 0 2% 0 5%;
+
 }
+
+main #aboutMe .text .first-letter {
+  color: var(--textColorRed);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4em;
+}
+
+
+main #aboutMe .myself {
+  height: 600px;
+  margin: 2% 0 0 2%;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px 5px #555555;
+  float: right;
+}
+
 
 @media (max-width: 1300px) {
-  .button {
+  .btn {
     margin-left: 0px;
     margin-right: 20px;
   }
@@ -269,7 +302,7 @@ main .textContainer .text {
     margin-right: 10px;
   }
 
-  .button {
+  .btn {
     margin-top: 20px;
     width: 170px;
     height: 40px;
