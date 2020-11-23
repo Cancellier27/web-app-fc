@@ -47,11 +47,14 @@ This project was made with the following technologies:
 2. Execute the app:
 
 ```sh
-  # Run ./index.html file
-  # Or you can access it on the following address:
-  https://cancellier27.github.io/web-app-fc/
-
+  Run ./index.html file
 ```
+
+Or you can access it through the link below:
+
+  <a href="https://cancellier27.github.io/web-app-fc/" target="_blank" >
+  https://cancellier27.github.io/web-app-fc/
+  </a>
 
 ## :mailbox_with_mail: Get in touch!
 
