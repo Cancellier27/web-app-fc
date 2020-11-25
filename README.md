@@ -34,9 +34,9 @@ This project was made with the following technologies:
 
 ## :fire: How to
 
-- ### **Requirements**
+<!-- - ### **Requirements** -->
 
-  - It's **necessary** **[Node.js](https://nodejs.org/en/)**
+  <!-- - It's **necessary** **[Node.js](https://nodejs.org/en/)** -->
 
 1. Clone the repo :
 
