@@ -39,7 +39,7 @@ header .nav_bar li a {
 header .nightModeBtn {
   position: fixed;
   top: calc(var(--headerHeight) / 2 - 10);
-  right: 10px;
+  right: 20px;
 
   display: flex;
   justify-content: space-between;
@@ -112,4 +112,35 @@ header .toggleMenu {
   transform: scale(2.5);
   margin-left: 40px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header .toggleMenu {
+    display: block;
+  }
+
+  header .myName {
+    display: none;
+  }
+
+  header nav {
+    position: relative;
+  }
+
+  header nav .nav_bar {
+    position: absolute;
+    top: 40px;
+    left: -255px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 150px;
+
+    background-color: var(--headerBackgroundColor);
+    border-bottom-right-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
 }

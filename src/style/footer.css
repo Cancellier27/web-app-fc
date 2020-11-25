@@ -127,20 +127,3 @@ footer .linksContainer .LinkDiv p {
 
 }
 
-
-
-
-
-@media (max-width: 480px) {
-  footer {
-    height: var(--footerHeightMobile);
-  }
-
-  header {
-    height: var(--headerHeightMobile);
-  }
-
-  main {
-    min-height: calc(100vh - var(--footerHeightMobile) - var(--headerHeightMobile));
-  }
-}
