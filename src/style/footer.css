@@ -1,0 +1,146 @@
+footer {
+  width: 100%;
+  height: calc(100vh / 2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  color: var(--textColorStandard);
+  background-color: var(--footerBackgroundColor);
+}
+
+footer .createdAndDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .createdAndDate .forDate {
+  margin-bottom: 10px;
+}
+
+footer .linksResume {
+  margin-top: 2%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .linksResume h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+footer .linksContainer {
+  width: 600px;
+  height: calc(100vh / 5);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+footer .linksContainer .LinkDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 130px;
+}
+
+footer .linksContainer .LinkDiv .LINKS {
+  color: var(--iconGeneralColor);
+  font-size: 5em;
+}
+
+footer .linksContainer .LinkDiv .LINKS:hover {
+  color: var(--iconHoverColor);
+}
+
+footer .linksContainer .LinkDiv a {
+  text-decoration: none;
+}
+
+footer .linksContainer .LinkDiv p {
+  font-size: 1.4em;
+}
+
+@media (max-width: 700px) {
+  footer .linksContainer {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .linksContainer {
+    width: 300px;
+    margin-bottom: 60px;
+  }
+
+  footer .linksContainer .LinkDiv {
+    height: 75px;
+  }
+
+  footer .linksContainer .LinkDiv p {
+    font-size: 0.8em;
+  }
+
+  footer .linksContainer .LinkDiv .LINKS {
+    font-size: 3em;
+  }
+
+  footer .linksResume {
+    font-size: 1.2em;
+  }
+}
+
+
+@media (max-width: 350px) {
+  footer .linksContainer {
+    width: 300px;
+  }
+
+  footer .linksContainer .LinkDiv p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 690px) {
+  main #home {
+    padding: 40% 0;
+  }
+
+  footer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .gitContainer,
+  footer .forDate {
+    display: none;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  footer {
+    height: var(--footerHeightMobile);
+  }
+
+  header {
+    height: var(--headerHeightMobile);
+  }
+
+  main {
+    min-height: calc(100vh - var(--footerHeightMobile) - var(--headerHeightMobile));
+  }
+}

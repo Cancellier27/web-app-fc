@@ -1,0 +1,65 @@
+main #home {
+  background-image: var(--homeBackgroundImg);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 10% 0;
+  width: 100%;
+}
+
+main #home .introduction {
+  width: 90%;
+}
+
+main #home .introduction .hello {
+  background: none;
+  font-size: 10rem;
+  color: var(--textColorStandard);
+}
+
+main #home .separator {
+  height: 5px;
+  width: 80px;
+
+  margin: 0 0 20px 0;
+
+  background-color: var(--textColorRed);
+}
+
+main #home .introduction .skills {
+  font-size: 1.4em;
+  margin: 10px 0 0 0;
+  color: var(--textColorSmoked);
+}
+
+main #home .btnContainer {
+  width: 90%;
+}
+
+main #home .btnContainer .homeNavBar {
+  margin-top: 40px;
+}
+
+
+
+@media (max-width: 550px) {
+  main .introduction .skills {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  main .introduction {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linksResume {
+    font-size: 1em;
+  }
+}

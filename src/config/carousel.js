@@ -1,5 +1,4 @@
 const slidesImages = document.querySelectorAll('.slidesImg')
-
 const carouselContainer = document.querySelector('.carouselSlider')
 
 let timeInterval;
@@ -8,6 +7,7 @@ const interval = 5000
 function ImageSlider(orientation) {
   const imgSelected = document.querySelector('.selected')
   imgSelected.classList.remove('selected')
+  
   clearInterval(timeInterval)
 
   if (orientation === 'next') {

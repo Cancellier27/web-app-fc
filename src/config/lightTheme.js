@@ -3,8 +3,8 @@ function changeColor() {
   const stylePath = document.getElementById('styleTag')
 
   if (checkbox.checked)  {
-    stylePath.href = "./src/style/styleLight.css"
+    stylePath.href = "./src/style/globalLight.css"
   } else {
-    stylePath.href = "./src/style/style.css"
+    stylePath.href = "./src/style/globalDark.css"
   }
 }
