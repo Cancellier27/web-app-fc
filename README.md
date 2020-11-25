@@ -21,8 +21,8 @@
 
 ## :bookmark: About
 
-A web-site created only with vanilla JavaScript, HTML and CSS for been used to Founder and Coders bootcamp. 
-It was made thinking in simplicity and functionality, fitting all the criteria demanded for the program.
+A web-site created only with vanilla JavaScript.
+It was made thinking in simplicity, functionality and with love s2.
 
 ## :rocket: Tech Used
 
