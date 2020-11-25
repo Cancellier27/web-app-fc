@@ -3,8 +3,8 @@ main #aboutMe {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: rgb(34, 34, 34);
-  background: linear-gradient(90deg, rgb(27, 27, 27) 0%, rgb(40, 41, 48) 100%);
+  /* background: rgb(34, 34, 34); */
+  background: linear-gradient(90deg, var(--gradientColorAboutMe1) 0%, var(--gradientColorAboutMe2) 100%);
 }
 
 main #aboutMe h1 {

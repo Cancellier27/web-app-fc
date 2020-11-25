@@ -16,7 +16,7 @@
 ## :computer: Web
 
 <h1 align="center">
-    <img alt="Web" src=".github/imageSite.png" width="650px">
+    <img alt="Web" src="./src/assets/carouselImg/thisSiteCrop.PNG" width="650px">
 </h1>
 
 ## :bookmark: About

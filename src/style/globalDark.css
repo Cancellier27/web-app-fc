@@ -6,7 +6,7 @@
   --textColorRed: #ef0d33;
   --activateColor: #911919;
 
-  --textColorStandard: #fff1f1;
+  --textColorStandard: #fff;
   --textColorDark: #000;
   --textColorSmoked: #d8d8d8;
 
@@ -26,6 +26,12 @@
   --carouselDescriptionColor: #222227;
   --carouselBordersColor: #19181d;
 
+  --gradientColorAboutMe1: rgb(27, 27, 27);
+  --gradientColorAboutMe2: rgb(40, 41, 48);
+
+  --gradientColorProjects1: rgba(17,17,23,1);
+  --gradientColorProjects2: rgba(48,48,59,1);
+
   --homeBackgroundImg: url('../assets/backgrounds/backgroundDark.png');
 }
 
@@ -38,18 +44,6 @@
   font-family: 'Roboto', sans-serif;
 
   scroll-behavior: smooth;
-}
-
-
-/* body {
-  min-width: 100vw;
-} */
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* standards */
