@@ -3,16 +3,16 @@
   --headerHeightMobile: 68px;
   --headerBackgroundColor: rgba(0, 0, 0, 0.7);
 
+  --footerHeight: 150px;
+  --footerHeightMobile: 50px;
+  --footerBackgroundColor: #000;
+
   --textColorRed: #ef0d33;
   --activateColor: #911919;
 
   --textColorStandard: #fff;
   --textColorDark: #000;
   --textColorSmoked: #d8d8d8;
-
-  --footerHeight: 150px;
-  --footerHeightMobile: 50px;
-  --footerBackgroundColor: black;
 
   --btnBackground: #ffffff;
   --btnHoverBackground: #ef0d33;
@@ -29,8 +29,8 @@
   --gradientColorAboutMe1: rgb(27, 27, 27);
   --gradientColorAboutMe2: rgb(40, 41, 48);
 
-  --gradientColorProjects1: rgba(17,17,23,1);
-  --gradientColorProjects2: rgba(48,48,59,1);
+  --gradientColorProjects1: rgba(17, 17, 23, 1);
+  --gradientColorProjects2: rgba(48, 48, 59, 1);
 
   --homeBackgroundImg: url('../assets/backgrounds/backgroundDark.png');
 }
