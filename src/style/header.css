@@ -48,6 +48,14 @@ header .nightModeBtn {
   color: var(--textColorStandard);
 }
 
+header .toggleMenu {
+  display: none;
+  color: var(--textColorRed);
+  transform: scale(2.5);
+  margin-left: 40px;
+  cursor: pointer;
+}
+
 header .nightModeBtn .switch {
   margin: 0 5px;
 
@@ -106,13 +114,6 @@ header .nightModeBtn .switch .slider.round:before {
   border-radius: 50%;
 }
 
-header .toggleMenu {
-  display: none;
-  color: var(--textColorRed);
-  transform: scale(2.5);
-  margin-left: 40px;
-  cursor: pointer;
-}
 
 @media (max-width: 600px) {
   header .toggleMenu {
@@ -144,3 +145,10 @@ header .toggleMenu {
     transition: all 0.3s ease-in-out;
   }
 }
+
+@media (max-width: 425px) {
+  header {
+    height: var(--headerHeightMobile);
+  }
+}
+
