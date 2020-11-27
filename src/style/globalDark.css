@@ -63,6 +63,10 @@
   font-family: 'Bebas Neue', cursive;
 }
 
+.imgPositionLeft {
+  object-position: left;
+}
+
 .btn {
   overflow: hidden;
   height: 60px;

@@ -84,11 +84,6 @@ footer .linksContainer .LinkDiv p {
 
 
 @media (max-width: 690px) {
-    /* footer {
-      align-items: center;
-      justify-content: center;
-    } */
-
   footer .gitContainer,
   footer .forDate {
     display: none;

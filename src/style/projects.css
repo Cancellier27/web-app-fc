@@ -57,7 +57,7 @@ main .carouselContainer .carouselSlider .slidesImg img {
   border-radius: 5px;
 
   object-fit: cover;
-  object-position: left;
+  /* object-position: top; */
 }
 
 main .carouselContainer .carouselSlider .slidesImg .description {
@@ -90,7 +90,7 @@ main .carouselContainer .carouselSlider .slidesImg .description div {
   justify-content: center;
 }
 
-main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+main .carouselContainer .carouselSlider .slidesImg .description div a {
   height: 70%;
   padding: 0 15px 0 15px;
 
@@ -128,10 +128,13 @@ main .carouselContainer .buttonsSlider .nextButton:focus {
   outline: none;
 }
 
-main #projects p {
+
+main #projects .projectTitle {
   color: var(--textColorStandard);
   font-size: 1.2em;
-  margin: 0 30px 0 30px;
+  width: 80%;
+  text-align: center;
+
 }
 
 @media (max-width: 1250px) {
@@ -148,10 +151,10 @@ main #projects p {
   }
 
   main .carouselContainer .carouselSlider .slidesImg .description p {
-    font-size: 1em !important;
+    font-size: 1em;
   }
 
-  main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+  main .carouselContainer .carouselSlider .slidesImg .description div a {
     font-size: 1em;
   }
 }
@@ -180,10 +183,10 @@ main #projects p {
   }
 
   main .carouselContainer .carouselSlider .slidesImg .description p {
-    font-size: 0.8em !important;
+    font-size: 1em;
   }
 
-  main .carouselContainer .carouselSlider .slidesImg .description div a.buttonLinkDesc {
+  main .carouselContainer .carouselSlider .slidesImg .description div a {
     font-size: 0.8em;
   }
 
@@ -193,22 +196,27 @@ main #projects p {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
   main .carouselContainer {
     height: 350px;
     width: 100vw;
   }
 
   main .carouselContainer .carouselSlider {
-    width: 75%;
-  }
-
-  main .carouselContainer .buttonsSlider {
     width: 90%;
   }
 
+  main .carouselContainer .buttonsSlider {
+    z-index: 10;
+    width: 85%;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description p {
+    font-size: 0.8em;
+  }
+
   main .carouselContainer .carouselSlider .slidesImg img {
-    object-position: top;
+    /* object-position: top; */
   }
 
   main .carouselTitle {
@@ -218,17 +226,33 @@ main #projects p {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
+  main .carouselContainer .carouselSlider .slidesImg .description div a {
+    height: 50%;
+    width: 80px;
+    padding: 0;
+    margin-left: 1%;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg .description p {
+  margin: 2%;
+  padding: 0;
+  }
+
+  main .carouselContainer .carouselSlider .slidesImg img {
+    height: 80%;
+  }
+  
+  main .carouselContainer .carouselSlider .slidesImg .description {
+    height: 20%;
+  }
+
   main .textContainer .text {
     font-size: 1em;
   }
 
   main .textContainer {
     padding: 25px 0 30px 0;
-  }
-
-  .lightGray {
-    display: none;
   }
 }
 
