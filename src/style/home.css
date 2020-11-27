@@ -12,20 +12,28 @@ main #home {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
 
   padding: 10% 0;
   width: 100%;
+
 }
 
 main #home .introduction {
   width: 90%;
+  margin-top: 80px;
 }
 
-main #home .introduction .hello {
+main #home .introduction h1 {
   background: none;
   font-size: 10rem;
   color: var(--textColorStandard);
+}
+
+main #home .introduction .skills {
+  font-size: 1.4em;
+  margin: 10px 0 0 0;
+  color: var(--textColorSmoked);
 }
 
 main #home .separator {
@@ -37,26 +45,23 @@ main #home .separator {
   background-color: var(--textColorRed);
 }
 
-main #home .introduction .skills {
-  font-size: 1.4em;
-  margin: 10px 0 0 0;
-  color: var(--textColorSmoked);
-}
-
 main #home .btnContainer {
   width: 90%;
 }
 
-main #home .btnContainer .homeNavBar {
+main #home .btnContainer div {
   margin-top: 40px;
 }
 
 
 
-@media (max-width: 550px) {
-  main .introduction .skills {
-    margin-top: 20px;
-    font-size: 1em;
+@media (max-width: 615px) {
+  main #home .introduction h1 {
+    font-size: 8rem;
+  }
+
+  main #home .introduction .skills {
+    font-size: 1.2em;
   }
 
   main .introduction {
@@ -65,8 +70,22 @@ main #home .btnContainer .homeNavBar {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .linksResume {
     font-size: 1em;
+  }
+
+  main #home .introduction h1 {
+    font-size: 6rem;
+  }
+
+  main #home .introduction .skills {
+    font-size: 0.8em;
+  }
+
+  main #home .btnContainer div a {
+    font-size: 0.8em;
+    width: 190px;
+    height: 50px;
   }
 }

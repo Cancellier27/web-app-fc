@@ -150,5 +150,9 @@ header .nightModeBtn .switch .slider.round:before {
   header {
     height: var(--headerHeightMobile);
   }
+
+  header nav .nav_bar {
+    top: 33.5px;
+  }
 }
 
