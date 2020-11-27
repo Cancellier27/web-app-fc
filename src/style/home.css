@@ -53,8 +53,6 @@ main #home .btnContainer div {
   margin-top: 40px;
 }
 
-
-
 @media (max-width: 615px) {
   main #home .introduction h1 {
     font-size: 8rem;

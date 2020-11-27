@@ -3,7 +3,6 @@ main #aboutMe {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* background: rgb(34, 34, 34); */
   background: linear-gradient(90deg, var(--gradientColorAboutMe1) 0%, var(--gradientColorAboutMe2) 100%);
 }
 
@@ -28,19 +27,31 @@ main #aboutMe .text .first-letter {
   font-size: 4em;
 }
 
-
-main #aboutMe .myself {
+main #aboutMe .text img {
   width: 20%;
   min-width: 200px;
-  margin: 3% 0 0 3%;
+  margin: 3% 0 20px 3%;
   border-radius: 20px;
-  box-shadow: -5px 5px 10px 5px #555555;
+  box-shadow: -5px 5px 10px 3px #3b3b3b;
   float: right;
 }
 
-
-@media (max-width: 600px) {
-  main .introduction .hello {
-    font-size: 6rem;
+@media (max-width: 425px) {
+  main #aboutMe h1 {
+    font-size: 2.5em;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  
   }
+
+  main #aboutMe .text img {
+    min-width: 150px;
+    margin-right: 4%;
+  }
+
+  main #aboutMe .text {
+    font-size: 1em;
+    margin-bottom: 50px;
+  }
+
 }
