@@ -45,19 +45,6 @@
   scroll-behavior: smooth;
 }
 
-
-body {
-  /* background-color: #111517; */
-  width: 100%;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* standards */
 .container {
   margin: 0;
@@ -71,12 +58,12 @@ main {
   z-index: 5 !important;
 }
 
-.lagosta {
-  font-family: 'Lobster', cursive;
+.bebasFont {
+  font-family: 'Bebas Neue', cursive;
 }
 
-.bebas {
-  font-family: 'Bebas Neue', cursive;
+.imgPositionLeft {
+  object-position: left;
 }
 
 .btn {
