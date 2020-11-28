@@ -135,6 +135,28 @@ main #projects .projectTitle {
   text-align: center;
 
 }
+ 
+main #projects .technologyUsedContainer {
+  width: 50%;
+  height: auto;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  gap: 30px;
+
+  justify-items: center;
+  align-items: center;
+
+}
+
+main #projects .technologyUsedContainer i {
+font-size: 10em;
+}
+
+
 
 @media (max-width: 1250px) {
   main .carouselContainer {
@@ -249,5 +271,18 @@ main #projects .projectTitle {
   main .textContainer {
     padding: 25px 0 30px 0;
   }
+
+
+  main #projects .technologyUsedContainer {
+    width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); 
+
+  }
+
+  main #projects .technologyUsedContainer i {
+    font-size: 5em;
+    }
+
+
 }
 
