@@ -274,6 +274,12 @@ main #projects .technologyUsedContainer i .shadedMask:hover {
   }
 }
 
+@media (max-width: 560px) {
+  main #projects .technologyUsedContainer {
+    width: 75%;
+  }
+}
+
 @media (max-width: 425px) {
   main .carouselContainer .carouselSlider .slidesImg .description div a {
     height: 50%;
@@ -304,12 +310,12 @@ main #projects .technologyUsedContainer i .shadedMask:hover {
   }
 
   main #projects .technologyUsedContainer {
-    width: 60%;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-
+    width: 80%;
+    grid-template-columns: repeat(auto-filt, minmax(60px, 1fr));
+    grid-template-rows: repeat(2, 1fr)
   }
 
   main #projects .technologyUsedContainer i {
-    font-size: 5em;
+    font-size: 6em;
   }
 }
