@@ -135,7 +135,7 @@ main #projects .projectTitle {
   text-align: center;
 
 }
- 
+
 main #projects .technologyUsedContainer {
   width: 50%;
   height: auto;
@@ -144,7 +144,7 @@ main #projects .technologyUsedContainer {
   margin-bottom: 50px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 30px;
 
   justify-items: center;
@@ -153,8 +153,39 @@ main #projects .technologyUsedContainer {
 }
 
 main #projects .technologyUsedContainer i {
-font-size: 10em;
+  position: relative;
+  font-size: 9em;
+  padding: 2px;
 }
+
+main #projects .technologyUsedContainer i .shadedMask {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  text-decoration: none;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.15em;
+  color: var(--textColorStandard);
+  background-color: var(--iconsBackgroundColor);
+
+  border-radius: 8px;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+main #projects .technologyUsedContainer i .shadedMask:hover {
+  opacity: 1;
+}
+
 
 
 
@@ -252,14 +283,14 @@ font-size: 10em;
   }
 
   main .carouselContainer .carouselSlider .slidesImg .description p {
-  margin: 2%;
-  padding: 0;
+    margin: 2%;
+    padding: 0;
   }
 
   main .carouselContainer .carouselSlider .slidesImg img {
     height: 80%;
   }
-  
+
   main .carouselContainer .carouselSlider .slidesImg .description {
     height: 20%;
   }
@@ -274,12 +305,11 @@ font-size: 10em;
 
   main #projects .technologyUsedContainer {
     width: 60%;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 
   }
 
   main #projects .technologyUsedContainer i {
     font-size: 5em;
-    }
+  }
 }
-

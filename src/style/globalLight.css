@@ -3,6 +3,12 @@
   --headerHeightMobile: 68px;
   --headerBackgroundColor: rgba(201, 201, 201, 0.7);
 
+  --footerHeight: 150px;
+  --footerHeightMobile: 50px;
+  --footerBackgroundColor: rgb(255, 255, 255);
+
+  --iconsBackgroundColor: rgba(0, 0, 0, 0.2);
+
   --textColorRed: #ef0d33;
   --activateColor: #911919;
 
@@ -10,24 +16,20 @@
   --textColorDark: #000;
   --textColorSmoked: #000;
 
-  --footerHeight: 150px;
-  --footerHeightMobile: 50px;
-  --footerBackgroundColor: rgb(255, 255, 255);
-
   --btnBackground: #2e2e2e;
   --btnHoverBackground: #ef0d33;
   --btnActiveBackground: #911919;
 
   --linksInTextColor: #ef0d33;
 
-  --iconGeneralColor: #272727 ;
+  --iconGeneralColor: #272727;
   --iconHoverColor: #000000;
 
   --carouselDescriptionColor: #ffffff;
   --carouselBordersColor: #dfdfdf;
 
-  --gradientColorAboutMe1: rgba(217,217,217,1);
-  --gradientColorAboutMe2: rgba(255,255,255,1);
+  --gradientColorAboutMe1: rgba(217, 217, 217, 1);
+  --gradientColorAboutMe2: rgba(255, 255, 255, 1);
 
   --gradientColorProjects1: rgb(226, 226, 226);
   --gradientColorProjects2: rgb(255, 255, 255);
