@@ -14,8 +14,9 @@ main #aboutMe h1 {
 }
 
 main #aboutMe .text {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: normal;
+  letter-spacing: 1px;
   color: var(--textColorStandard);
   margin: 0 2% 5% 5%;
 
