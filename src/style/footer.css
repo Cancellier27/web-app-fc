@@ -47,7 +47,6 @@ footer .linksContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 footer .linksContainer .LinkDiv {
@@ -82,7 +81,6 @@ footer .linksContainer .LinkDiv p {
   }
 }
 
-
 @media (max-width: 690px) {
   footer .gitContainer,
   footer .forDate {
@@ -92,7 +90,6 @@ footer .linksContainer .LinkDiv p {
   footer .linksResume h1 {
     font-size: 2.5em;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -116,8 +113,6 @@ footer .linksContainer .LinkDiv p {
     font-size: 1.2em;
   }
 }
-
-
 
 @media (max-width: 425px) {
   footer {

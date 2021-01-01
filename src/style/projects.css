@@ -186,9 +186,6 @@ main #projects .technologyUsedContainer i .shadedMask:hover {
   opacity: 1;
 }
 
-
-
-
 @media (max-width: 1250px) {
   main .carouselContainer {
     height: 450px;
