@@ -1,305 +1,516 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link id="styleTag" rel="stylesheet" href="./src/style/globalDark.css" />
+    <link rel="stylesheet" href="./src/style/header.css" />
+    <link rel="stylesheet" href="./src/style/home.css" />
+    <link rel="stylesheet" href="./src/style/aboutMe.css" />
+    <link rel="stylesheet" href="./src/style/projects.css" />
+    <link rel="stylesheet" href="./src/style/footer.css" />
 
-  <link id="styleTag" rel="stylesheet" href="./src/style/globalDark.css">
-  <link rel="stylesheet" href="./src/style/header.css">
-  <link rel="stylesheet" href="./src/style/home.css">
-  <link rel="stylesheet" href="./src/style/aboutMe.css">
-  <link rel="stylesheet" href="./src/style/projects.css">
-  <link rel="stylesheet" href="./src/style/footer.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1693a68714.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="https://kit.fontawesome.com/1693a68714.js" crossorigin="anonymous"></script>
+    <title>FCC website</title>
+  </head>
 
-  <title>FCC website</title>
-</head>
-
-<body>
-  <header>
-    <a href="#home" class="myName bebasFont">FCC</a>
-    <div class="toggleMenu" onclick="onMenuToggle()"><i class="fas fa-bars"></i></div>
-
-    <nav>
-      <ul class="nav_bar">
-        <li>
-          <a href="#home" class="redLinks" onclick="onMenuToggle()">Home</a>
-        </li>
-        <li>
-          <a href="#aboutMe" class="redLinks" onclick="onMenuToggle()">About</a>
-        </li>
-        <li>
-          <a href="#projects" class="redLinks" onclick="onMenuToggle()">Projects</a>
-        </li>
-        <li>
-          <a href="#contactMe" class="redLinks" onclick="onMenuToggle()">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="nightModeBtn">
-      <i class="fas fa-moon"></i>
-      <label class="switch">
-        <input type="checkbox" id="ThemeCheckbox" onclick="changeColor()">
-        <span class="slider round"></span>
-      </label>
-      <i class="fas fa-sun"></i>
-    </div>
-  </header>
-
-  <main>
-    <section id='home' class="container">
-      <div class="introduction">
-        <h1 class="bebasFont">
-          Hello, <br /> I am Filipe
-        </h1>
-        <div class="separator"></div>
-        <h3 class="skills"> I'm a Civil Engineer and a Web Developer <b class="redText">(</b>in training<b
-            class="redText">)</b></h3>
+  <body>
+    <header>
+      <a href="#home" class="myName bebasFont">FCC</a>
+      <div class="toggleMenu" onclick="onMenuToggle()">
+        <i class="fas fa-bars"></i>
       </div>
-      <div class="btnContainer">
-        <div>
-          <a href="#aboutMe" class="btn red">LET'S START!</a>
+
+      <nav>
+        <ul class="nav_bar">
+          <li>
+            <a href="#home" class="redLinks" onclick="onMenuToggle()">Home</a>
+          </li>
+          <li>
+            <a href="#aboutMe" class="redLinks" onclick="onMenuToggle()"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="redLinks" onclick="onMenuToggle()"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contactMe" class="redLinks" onclick="onMenuToggle()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nightModeBtn">
+        <i class="fas fa-moon"></i>
+        <label class="switch">
+          <input type="checkbox" id="ThemeCheckbox" onclick="changeColor()" />
+          <span class="slider round"></span>
+        </label>
+        <i class="fas fa-sun"></i>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="introduction">
+          <h1 class="bebasFont">
+            Hello, <br />
+            I am Filipe
+          </h1>
+          <div class="separator"></div>
+          <h3 class="skills">
+            I'm a Civil Engineer specializing in Web Developer
+          </h3>
         </div>
-      </div>
-    </section>
-
-    <section id='aboutMe' class="container">
-      <h1 class="bebasFont redText">About Me</h1>
-      <p class="text">
-        <img src="./src/assets/profile/FilipeCancellier.JPG" alt="Myself">
-        <span class="first-letter">H</span>ello, my name is <strong>Filipe Cancellier da Costa</strong>.
-        <br /><br />
-        I was born and raised in Brazil, more specifically in the city of Urussanga, Santa Catarina. I consider myself a
-        good and a simple person, in my free time you will probably finsd me watching a good movie, playing some game on my laptop,
-        exploring the city <b class="redText">(</b>because London is awesome<b class="redText">)</b> or studying coding.
-        <br /><br />
-        My career is summarized in engineering jobs. I graduated in Civil Engineering in 2017, when I started working
-        as a Civil Engineer in a city close to my hometown. Although most of my professionals skills are turned to this field, I
-        felt that something wasn't right something was missing, I wasn't totally happy being a Civil Engineer, so I decided to
-        challenge myself and try to learn something new.
-        <br /><br />
-        I have always enjoyed computer, games and technology so I thought <b class="redText">"</b>Why not try coding?
-        <b class="redText">"</b>, and so I did. I started enrolling in some free online programming courses and ended up starting with 
-        <a class="redLinks" href="https://www.python.org/">Python</a>. I was enjoying learning Python but one day, my cousin, who is a front-end engineer, showed me a little bit about
-        web development. So I decided to try some <a class="redLinks" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"target="blank">Javascript</a>,
-        just to see what it would be like. After I wrote my first “Hello World” in Javascript, I really fell in love
-        with all this, the freedom and limitless creativity that it gives to you, and the fact that you can see every line of code that you wrote working
-        on the screen.
-        <br /><br />
-        Since then, I have been teaching myself coding for web
-        <b class="redText">(</b>
-        <a class="redLinks" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank">JS</a>,
-        <a class="redLinks" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank">CSS</a> ,
-        <a class="redLinks" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="blank">HTML</a>
-        <b class="redText">)</b>,
-        through some online courses such as Udemy, Udacity, RocketSeat and some websites  skills such
-        as codewars and hackerrank. However, it's quite hard learn everything by yourself. There is indeed tons of material on internet, but you have to
-        know what to focus on and what not. I've been studying for over a year and I am really enjoying each new step each new feature that I learn
-        every day and I really want to take this to a new level!
-      </p>
-    </section>
-
-    <section id="projects" class="container">
-
-      <h1 class="bebasFont redText">Projects I've made:</h1>
-      <p class="projectTitle">Here you can find some projects that I've made so far. Some of then are from the online coursers that I'm doing
-        and others are completely my own</p>
-
-      <div class="carouselContainer">
-        <div class="carouselSlider">
-          <div class="slidesImg selected">
-            <img src="./src/assets/carouselImg/EcoletaSiteCrop.PNG" alt="EcoletaSite">
-            <div class="description">
-              <p>
-                App that shown places for disposable materials made in React.
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/NextLevelWeek" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img class="imgPositionLeft" src="./src/assets/carouselImg/fiflixCrop.png" alt="fiflix">
-            <div class="description">
-              <p>
-                App cloning Netflix interface, but for videos of users own preference.
-                Made with React
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/React-Immersion" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img src="./src/assets/carouselImg/ForcaCrop.PNG" alt="Forca">
-            <div class="description">
-              <p>
-                A simple game called "Joga Da Forca" <b class="redText">(</b>Hangman<b class="redText">)</b> Made with
-                vanilla JS
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/Jogo-Forca" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img class="imgPositionLeft" src="./src/assets/carouselImg/githubAppCrop.PNG" alt="githubApp">
-            <div class="description">
-              <p>
-                Search app using the GitHub api, created with React.
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/github-search-app" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img src="./src/assets/carouselImg/JogoDaVelhaCrop.PNG" alt="jogoDaVelha"> 
-            <div class="description">
-              <p>
-                My firs web app. Hash game made with vanilla JS
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/HashGame" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img class="imgPositionLeft" src="./src/assets/carouselImg/PersonalSiteCrop.png" alt="PersonalSite">
-            <div class="description">
-              <p>
-                First personal site made with React.
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/FilipeSite" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img src="./src/assets/carouselImg/timerReactCrop.PNG" alt="timerReact">
-            <div class="description">
-              <p>
-                A basic timer made with React.
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/Timer-React" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img class="imgPositionLeft" src="./src/assets/carouselImg/MapaCrop.png" alt="happyApp">
-            <div class="description">
-              <p>
-                Happy is an app that find the nearest orphanage to your location.
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/happy-app" target="blank" class="btn">Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="slidesImg">
-            <img class="imgPositionLeft" src="./src/assets/carouselImg/thisSiteCrop.PNG" alt="foundersWebSite">
-            <div class="description">
-              <p>
-                This website that you are right now.
-              </p>
-              <div>
-                <a href="https://github.com/Cancellier27/web-app-fc" target="blank" class="btn">Git
-                  Repo</a>
-              </div>
-            </div>
+        <div class="btnContainer">
+          <div>
+            <a href="#aboutMe" class="btn red">LET'S START!</a>
           </div>
         </div>
-        <div class="buttonsSlider">
-          <button class="prevButton redLinks" onclick="ImageSlider()">
-            <i class="fas fa-chevron-circle-left"></i>
-          </button>
-          <button class="nextButton redLinks" onclick="ImageSlider('next')">
-            <i class="fas fa-chevron-circle-right"></i>
-          </button>
+      </section>
+
+      <section id="aboutMe">
+        <h1 class="bebasFont redText">About Me</h1>
+        <p class="text">
+          <img src="./src/assets/profile/FilipeCancellier.JPG" alt="Myself" />
+          <span class="first-letter">H</span>ello, my name is
+          <strong>Filipe Cancellier da Costa</strong>. <br /><br />
+          I was born and raised in Brazil, more specifically in the city of
+          Urussanga, Santa Catarina. I consider myself a good and a simple
+          person, in my free time you will probably find me watching a good
+          movie, playing video games or studying coding.
+          <br /><br />
+          My career, so far, is summarized in engineering jobs. I have over 7
+          year of experience as a engineer, mainly in the construction area.
+          Throughout these years I gathered many soft skills, such as teamwork,
+          leadership, problem solving and others. I was faced with many
+          challenges during my career that always helped me to improve
+          professionally, being one of the biggest ones to work in a different
+          country with a different language and using different construction
+          standards. In 2019 due to a crisis in Brazil, I tried to find
+          something different to work with and as I have always enjoyed
+          computer, games and technology so I thought
+          <b class="redText">"</b>Why not coding?<b class="redText">"</b>
+          <br /><br />
+          I started enrolling in online programming courses and started with
+          <a class="redLinks" href="https://www.python.org/">Python</a>. It was
+          a good start as the language is quite simple to understand, but I
+          wanted to see something more real to be shown on the screen, and my
+          cousin, who is a front-end engineer, showed me web development and I
+          decided to learn
+          <a
+            class="redLinks"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="blank"
+            >Javascript</a
+          >. Web development was amazing, I could create so many things and they
+          were all working together
+          <b class="redText">(</b>
+          <a
+            class="redLinks"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="blank"
+            >JS</a
+          >,
+          <a
+            class="redLinks"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="blank"
+            >CSS</a
+          >
+          ,
+          <a
+            class="redLinks"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="blank"
+            >HTML</a
+          >
+          <b class="redText">)</b>, and rendering on my screen like a real
+          website. I really liked, even though I was doing only very basic code,
+          but the limitless creativity that it gives to you to create anything
+          just made me amazed. Since then, I have been teaching myself through
+          online courses such as Udemy, Udacity, RocketSeat and some websites
+          skills such as codewars and hackerrank. <br /><br />
+
+          In 2022 I enrolled for a Master's degree in computer science in
+          London, to elevate my skills to a competitive level, however at the
+          time I had a financial problem and had to suspend the course. After that
+          I kept studying by myself, and in 2023 I became a father, which was a
+          great surprise, but a very happy one, and because of that I had to
+          think about my baby and decided to keep working as a Civil Engineer
+          for a little more before trying to change my career.
+          <br /><br />
+          It takes me to 2024, when I did a full stack web development bootcamp
+          from HyperionDev, and learned even more about web, and also refreshed
+          my mind for techologies I had already learned like, React, MongoDD,
+          SQL, Ajax, Bootstrap, Express etc... And got myself motivated again to
+          try to get my first role in the tech industry!
+        </p>
+      </section>
+
+      <section id="projects">
+        <h1 class="bebasFont redText">Projects I've made:</h1>
+        <p class="projectTitle">
+          Here you can find some projects that I've made so far. Some of then
+          are from the online coursers that I'm doing and others are completely
+          my own
+        </p>
+
+        <div class="carouselContainer">
+          <div class="carouselSlider">
+            <div class="slidesImg selected">
+              <img
+                src="./src/assets/carouselImg/RPG.PNG"
+                alt="RPG"
+              />
+              <div class="description">
+                <p>
+                  Turn based RPG game created in ReactJS, (in development).
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/rpg-game-react"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg selected">
+              <img
+                src="./src/assets/carouselImg/bootcamp.PNG"
+                alt="RPG"
+              />
+              <div class="description">
+                <p>
+                  HyperionDev web development bootcamp portfolio page
+                </p>
+                <div>
+                  <a
+                    href="https://www.hyperiondev.com/portfolio/FC24020013628/"
+                    target="blank"
+                    class="btn"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg ">
+              <img
+                src="./src/assets/carouselImg/EcoletaSiteCrop.PNG"
+                alt="EcoletaSite"
+              />
+              <div class="description">
+                <p>
+                  App that shown places for disposable materials made in React.
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/NextLevelWeek"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img
+                class="imgPositionLeft"
+                src="./src/assets/carouselImg/fiflixCrop.png"
+                alt="fiflix"
+              />
+              <div class="description">
+                <p>
+                  App cloning Netflix interface, but for videos of users own
+                  preference. Made with React
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/React-Immersion"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img src="./src/assets/carouselImg/ForcaCrop.PNG" alt="Forca" />
+              <div class="description">
+                <p>
+                  A simple game called "Joga Da Forca"
+                  <b class="redText">(</b>Hangman<b class="redText">)</b> Made
+                  with vanilla JS
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/Jogo-Forca"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img
+                class="imgPositionLeft"
+                src="./src/assets/carouselImg/githubAppCrop.PNG"
+                alt="githubApp"
+              />
+              <div class="description">
+                <p>Search app using the GitHub api, created with React.</p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/github-search-app"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img
+                src="./src/assets/carouselImg/JogoDaVelhaCrop.PNG"
+                alt="jogoDaVelha"
+              />
+              <div class="description">
+                <p>My firs web app. Hash game made with vanilla JS</p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/HashGame"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img
+                class="imgPositionLeft"
+                src="./src/assets/carouselImg/PersonalSiteCrop.png"
+                alt="PersonalSite"
+              />
+              <div class="description">
+                <p>First personal site made with React.</p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/FilipeSite"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img
+                src="./src/assets/carouselImg/timerReactCrop.PNG"
+                alt="timerReact"
+              />
+              <div class="description">
+                <p>A basic timer made with React.</p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/Timer-React"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img
+                class="imgPositionLeft"
+                src="./src/assets/carouselImg/MapaCrop.png"
+                alt="happyApp"
+              />
+              <div class="description">
+                <p>
+                  Happy is an app that find the nearest orphanage to your
+                  location.
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/happy-app"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slidesImg">
+              <img
+                class="imgPositionLeft"
+                src="./src/assets/carouselImg/thisSiteCrop.PNG"
+                alt="foundersWebSite"
+              />
+              <div class="description">
+                <p>This website that you are right now.</p>
+                <div>
+                  <a
+                    href="https://github.com/Cancellier27/web-app-fc"
+                    target="blank"
+                    class="btn"
+                    >Git Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonsSlider">
+            <button class="prevButton redLinks" onclick="ImageSlider()">
+              <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <button class="nextButton redLinks" onclick="ImageSlider('next')">
+              <i class="fas fa-chevron-circle-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <p class="projectTitle">
+          Technology applied for majority of the above projects
+        </p>
+        <div class="technologyUsedContainer">
+          <i class="fab fa-html5 techIcon" style="color: orangered">
+            <a
+              class="shadedMask"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="blank"
+              >HTML5</a
+            >
+          </i>
+          <i class="fab fa-css3-alt techIcon" style="color: Dodgerblue">
+            <a
+              class="shadedMask"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="blank"
+              >CSS3</a
+            >
+          </i>
+          <i class="fab fa-js-square techIcon" style="color: yellow">
+            <a
+              class="shadedMask"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="blank"
+              >JavaScript</a
+            >
+          </i>
+          <i class="fab fa-react techIcon" style="color: cyan">
+            <a class="shadedMask" href="https://reactjs.org/" target="blank"
+              >React</a
+            >
+          </i>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contactMe">
+      <div class="linksResume">
+        <h1 class="bebasFont redText">Contact Me</h1>
+        <p>
+          Hey, I hope you've enjoyed my work! Here are some links to get in
+          contact with me
+        </p>
+      </div>
+
+      <div class="linksContainer">
+        <div class="LinkDiv">
+          <a
+            href="https://www.linkedin.com/in/filipe-cancellier-da-costa-8459ab160/"
+            target="blank"
+            class="LINKS"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/filipe-cancellier-da-costa-8459ab160/"
+            target="blank"
+          >
+            <p class="redLinks">LinkedIn</p>
+          </a>
+        </div>
+
+        <div class="LinkDiv">
+          <a
+            href="https://github.com/Cancellier27"
+            target="blank"
+            class="LINKS"
+          >
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a href="https://github.com/Cancellier27" target="blank">
+            <p class="redLinks">GitHub</p>
+          </a>
+        </div>
+
+        <div class="LinkDiv">
+          <a
+            href="https://www.freecodecamp.org/cancellier27"
+            target="blank"
+            class="LINKS"
+          >
+            <i class="fab fa-free-code-camp"></i>
+          </a>
+          <a href="https://www.freecodecamp.org/cancellier27" target="blank">
+            <p class="redLinks">freeCodeCamp</p>
+          </a>
+        </div>
+
+        <div class="LinkDiv">
+          <a
+            href="https://www.codewars.com/users/Cancellier"
+            target="blank"
+            class="LINKS"
+          >
+            <i
+              class="iconify"
+              data-icon="simple-icons:codewars"
+              data-inline="false"
+            ></i>
+          </a>
+          <a href="https://www.codewars.com/users/Cancellier" target="blank">
+            <p class="redLinks">Codewars</p>
+          </a>
         </div>
       </div>
 
-      <p class="projectTitle">Technology applied for majority of the above projects </p>
-      <div class="technologyUsedContainer">
-          <i class="fab fa-html5 techIcon" style="color: orangered;">
-            <a class="shadedMask" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="blank">HTML5</a>
-          </i>
-          <i class="fab fa-css3-alt techIcon" style="color: Dodgerblue;">
-            <a class="shadedMask" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank">CSS3</a>
-          </i>
-          <i class="fab fa-js-square techIcon" style="color: yellow;">
-              <a class="shadedMask" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank">JavaScript</a>
-          </i>
-          <i class="fab fa-react techIcon" style="color: cyan;">
-            <a class="shadedMask" href="https://reactjs.org/" target="blank">React</a>
-          </i>
+      <div class="createdAndDate">
+        <div class="todayDate"></div>
+        <p>
+          <strong class="redLinks">Filipe Cancellier da Costa</strong> ©2024
+        </p>
       </div>
+    </footer>
 
-    </section>
-  </main>
-
-  <footer id="contactMe">
-    <div class="linksResume">
-      <h1 class="bebasFont redText">Contact Me</h1>
-      <p>Hey, I hope you've enjoyed my work! Here are some links to get in contact with me</p>
-    </div>
-
-    <div class="linksContainer">
-      <div class="LinkDiv">
-        <a href="https://www.linkedin.com/in/filipe-cancellier-da-costa-8459ab160/" target="blank" class="LINKS">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/filipe-cancellier-da-costa-8459ab160/" target="blank">
-          <p class="redLinks">LinkedIn</p>
-        </a>
-      </div>
-
-      <div class="LinkDiv">
-        <a href="https://github.com/Cancellier27" target="blank" class="LINKS">
-          <i class="fab fa-github-square"></i>
-        </a>
-        <a href="https://github.com/Cancellier27" target="blank">
-          <p class="redLinks">GitHub</p>
-        </a>
-      </div>
-
-      <div class="LinkDiv">
-        <a href="https://www.freecodecamp.org/cancellier27" target="blank" class="LINKS">
-          <i class="fab fa-free-code-camp"></i>
-        </a>
-        <a href="https://www.freecodecamp.org/cancellier27" target="blank">
-          <p class="redLinks">freeCodeCamp</p>
-        </a>
-      </div>
-
-      <div class="LinkDiv">
-        <a href="https://www.codewars.com/users/Cancellier" target="blank" class="LINKS">
-          <i class="iconify" data-icon="simple-icons:codewars" data-inline="false"></i>
-        </a>
-        <a href="https://www.codewars.com/users/Cancellier" target="blank">
-          <p class="redLinks">Codewars</p>
-        </a>
-      </div>
-    </div>
-
-    <div class="createdAndDate">
-      <div class="todayDate"></div>
-      <p><strong class="redLinks">Filipe Cancellier da Costa</strong> ©2020</p>
-    </div>
-  </footer>
-
-  <script src='./src/config/date.js'></script>
-  <script src='./src/config/lightTheme.js'></script>
-  <script src='./src/config/carousel.js'></script>
-  <script src='./src/config/toggle.js'></script>
-</body>
-
+    <script src="./src/config/date.js"></script>
+    <script src="./src/config/lightTheme.js"></script>
+    <script src="./src/config/carousel.js"></script>
+    <script src="./src/config/toggle.js"></script>
+  </body>
 </html>

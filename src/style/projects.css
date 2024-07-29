@@ -1,4 +1,6 @@
 main #projects {
+  width: 100%;
+
   background: linear-gradient(90deg, var(--gradientColorProjects1) 0%, var(--gradientColorProjects2) 50%, var(--gradientColorProjects1) 100%);
   display: flex;
   flex-direction: column;
